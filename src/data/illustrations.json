@@ -1,0 +1,89 @@
+{
+    "appdesign": [
+      {
+        "text": "Designing modern apps with sleek interfaces.",
+        "image": "https://example.com/image1.jpg"
+      },
+      {
+        "text": "User-centered design principles are crucial.",
+        "image": "https://example.com/image2.jpg"
+      },
+      {
+        "text": "Innovative approaches for app functionality.",
+        "image": "https://example.com/image3.jpg"
+      },
+      {
+        "text": "Future of mobile app development.",
+        "image": "https://example.com/image4.jpg"
+      }
+    ],
+      "webdesign": [
+        { "text": "Building responsive and beautiful websites." }
+      ],
+      "bookcovers": [
+        { "text": "Creating visually striking book covers." }
+      ],
+      "illustrations": {
+        "categories": [
+          {
+            "name": "Artwork",
+            "images": [
+              "src/assets/Illustrations/Artwork/Artwork_1.jpg",
+              "src/assets/Illustrations/Artwork/Artwork_2.jpg",
+              "src/assets/Illustrations/Artwork/Artwork_3.jpg",
+              "src/assets/Illustrations/Artwork/Artwork_4.jpg"
+            ]
+          },       
+           {
+            "name": "Artwork Comic Style",
+            "images": [
+              
+              "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg",
+              "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg"
+            ]
+          },
+          {
+            "name": "Artwork Manga Style",
+            "images": [
+              
+              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg",
+              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg",
+              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg",
+              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_4.jpg"
+            ]
+          },
+          
+  
+          {
+            "name": "Vector Art",
+            "images": [
+              
+              "src/assets/Illustrations/VectorArt/VectorArt_1.png",
+              "src/assets/Illustrations/VectorArt/VectorArt_2.png",
+              "src/assets/Illustrations/VectorArt/VectorArt_3.png"
+            ]
+          },
+          {
+            "name": "Visual Identity",
+            "images": [
+              "TBD"
+            ]
+          },
+          {
+            "name": "Original logo",
+            "images": [
+              "TBD"
+            ]
+          },
+          {
+            "name": "Logo Recreation",
+            "images": [
+              "src/assets/Illustrations/LogoRecreation/LogoRecreation_1.png",
+              "src/assets/Illustrations/LogoRecreation/LogoRecreation_2.png",
+              "src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png"
+            ]
+          }
+        ]
+      }
+    }
+    

@@ -1,0 +1,94 @@
+footer {
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    top: -150px;
+  }
+  
+  /* Slider for the active background */
+  .footer-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px; /* Match the width of the buttons */
+    height: 50px; /* Match the height of the buttons */
+    background-color: #060606;
+    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.05)); /* Optional: Add a shadow */
+    border-radius: 20px;
+    transition: transform 0.5s ease-out; /* Smooth transition */
+    z-index: -1; /* Behind the buttons */
+  }
+  
+  /* Scoped Button Styles for Footer */
+  footer button {
+    top: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgba(6, 6, 6, 1);
+    transition: color 0.5s ease-out; /* Only transition the color */
+    position: relative;
+  }
+  
+  /* Inactive button state */
+  footer button:not(.active) {
+    border-radius: 20px;
+    color: rgba(6, 6, 6, 0.25);
+    transition: color 0.5s ease-out; /* Only transition the color */
+  }
+  
+  /* Hover state for inactive buttons */
+  footer button:not(.active):hover {
+    background-color: transparent;
+    color: #060606;
+    transition: color 0.5s ease-out; /* Only transition the color */
+  }
+  
+  /* Active button state */
+  footer button.active {
+    color: #eeeeee;
+    cursor: default;
+  }
+  
+  /* Scoped Tab Button */
+  footer .tab {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #eeeeee;
+    color: #060606;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  footer .tab {
+    background-color: transparent;
+  }
+  
+  footer .tab:hover {
+    background-color: transparent;
+  }
+  
+  footer .tab.active {
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  /* Resize the image for different screen sizes */
+  @media (min-width: 2550px) {
+    footer {
+      left: 230px;
+    }
+  }
+  

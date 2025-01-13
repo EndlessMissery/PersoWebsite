@@ -1,0 +1,25 @@
+/* Basic styling for the images */
+.image-gallery-img {
+    width: 100%; /* Make the image stretch horizontally to the container */
+    height: 100%; /* Make the image stretch vertically to the container */
+    object-fit: cover; /* Ensure the image covers the entire box while maintaining aspect ratio */
+    border-radius: 8px;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+    overflow-y: hidden;
+  }
+  
+  /* Resize the image for different screen sizes */
+  @media (max-width: 1920px) {
+    .image-gallery-img {
+      width: 100%; /* Ensure it still fits the container */
+      height: 100%; /* Ensure it still fits the container */
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .image-gallery-img {
+      width: 100%; /* Ensure it still fits the container */
+      height: 100%; /* Ensure it still fits the container */
+    }
+  }
