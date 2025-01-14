@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/main.css';
 import data from '../../data/illustrations.json'; // Import the illustrations data
 import illustrationMap from '../../data/Illustrationmap'; // Import the illustration map
-import ContentBox from './ContentBox';
+import ContentBox from './Scrolls/ContentBox';
 import SlideContent from './Scrolls/SlideContent';
-import CategoryButtons from './CategoryButtons';
+import CategoryButtons from './Scrolls/CategoryButtons';
 import ScrollIndicator from './Scrolls/ScrollIndicator';
-import DotIndicator from './DotIndicator';
+import DotIndicator from './Scrolls/DotIndicator';
 
 const RightContent = ({ rightActiveTab }) => {
   const [slideIndex, setSlideIndex] = useState({
@@ -69,7 +69,6 @@ const RightContent = ({ rightActiveTab }) => {
     if (rightActiveTab === 'illustrations') {
       return {
         image: getSlideImage(content.illustrations.categories[selectedCategory]?.images[slideIndex.illustrations]),
-        text: content.illustrations.categories[selectedCategory]?.name || '',
       };
     }
     if (rightActiveTab === 'appDesign') {

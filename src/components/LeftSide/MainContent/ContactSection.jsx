@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Buttons from "../ContactButtons";
+import Buttons from "./ContactButtons";
 import { Typewriter } from "react-simple-typewriter";
 
 const ContactSection = () => {

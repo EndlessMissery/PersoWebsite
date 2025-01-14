@@ -17,16 +17,16 @@ import LogoRecreation2 from '../assets/Illustrations/LogoRecreation/LogoRecreati
 import LogoRecreation3 from '../assets/Illustrations/LogoRecreation/LogoRecreation_3.png';
 
 // APP DESIGN IMPORTS
-import AppDesignImage1 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
-import AppDesignImage2 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
-import AppDesignImage3 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
-import AppDesignImage4 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
+import App1 from '../assets/AppDesigns/App_1.png';
+import App2 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
+import App3 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
+import App4 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
 
 // WEB DESIGN IMPORTS
-import WebDesignImage1 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
+import Web1 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
 
 // BOOK COVERS IMPORTS
-import BookCoverImage1 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
+import Book1 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
 
 // ILLUSTRATION MAP
 const illustrationMap = {
@@ -49,16 +49,16 @@ const illustrationMap = {
   'src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png': LogoRecreation3,
 
   // APP DESIGN IMPORTS
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': AppDesignImage1,
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': AppDesignImage2,
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': AppDesignImage3,
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': AppDesignImage4,
+  'src/assets/AppDesigns/App_1.png': App1,
+  'src/assets/Illustrations/Artwork/Artwork_3.jpg': App2,
+  'src/assets/Illustrations/Artwork/Artwork_3.jpg': App3,
+  'src/assets/Illustrations/Artwork/Artwork_3.jpg': App4,
 
   // WEB DESIGN IMPORTS
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': WebDesignImage1,
+  'src/assets/Illustrations/Artwork/Artwork_3.jpg': Web1,
 
   // BOOK COVERS IMPORTS
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': BookCoverImage1
+  'src/assets/Illustrations/Artwork/Artwork_3.jpg': Book1
 };
 
 export default illustrationMap;

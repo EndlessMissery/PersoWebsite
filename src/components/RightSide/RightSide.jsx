@@ -1,6 +1,6 @@
 import React from "react";
 import RightContent from "./RightContent";
-import RightHeader from "./RightHeader";
+import RightHeader from "./RightHeader/RightHeader";
 import "../../styles/main.css";
 
 const RightSide = ({ rightActiveTab, setrightActiveTab }) => {
