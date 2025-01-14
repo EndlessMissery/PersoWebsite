@@ -18,6 +18,7 @@
     top: 25px; /* Place the dots at the top of the content box */
     left: 50%;
     gap: 10px;
+    z-index: 10;
     transform: translateX(-50%);
   }
   

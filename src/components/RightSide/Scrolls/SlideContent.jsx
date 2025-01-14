@@ -1,24 +1,23 @@
-// Main Component
-import React from 'react';
-import Illustration from './Illustration';
-import AppDesign from './AppDesign';
-import WebDesign from './WebDesign';
-import BookCover from './BookCover';
+import React from "react";
+import "../../../styles/main.css";
 
-const SlideContent = ({ rightActiveTab, content, slideIndex, selectedCategory }) => {
-  switch (rightActiveTab) {
-    case 'illustrations':
-      return <Illustration content={content} slideIndex={slideIndex} selectedCategory={selectedCategory} />;
-    case 'appDesign':
-      return <AppDesign content={content} slideIndex={slideIndex} />;
-    case 'webDesign':
-      return <WebDesign content={content} slideIndex={slideIndex} />;
-    case 'bookCover':
-      return <BookCover content={content} slideIndex={slideIndex} />;
-    default:
-      return <div>No content available</div>;
+const SlideContent = ({ slide }) => {
+  if (!slide) {
+    return <div className="slide-content">No content available</div>;
   }
+
+  return (
+    <div className="slide-content">
+      {slide.image && (
+        <img
+          src={slide.image}
+          alt={slide.text || "No description available"}
+          className="slide-image"
+        />
+      )}
+      {slide.text && <div className="slide-text">{slide.text}</div>}
+    </div>
+  );
 };
 
 export default SlideContent;
-

@@ -27,10 +27,12 @@
   /* Specifically target buttons inside .category-buttons to prevent global footer button styles from affecting them */
   .category-buttons button:hover {
     color: rgba(6, 6, 6, 1);
+    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
   }
   
   .category-buttons .active {
     color: #060606;
     cursor: default;
+    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
   }
   
