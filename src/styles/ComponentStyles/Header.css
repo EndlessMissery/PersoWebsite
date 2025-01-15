@@ -1,0 +1,17 @@
+header {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+
+  .logo {
+    width: 145px;
+    height: 200px;
+  }
+
+  @media (min-width: 2550px) {
+    .logo {
+      width: 175px;
+      height: 235px;
+    }
+  }
