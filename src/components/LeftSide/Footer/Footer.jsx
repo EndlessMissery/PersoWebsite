@@ -42,4 +42,3 @@ const Footer = ({ activeTab, setActiveTab }) => {
 };
 
 export default Footer;
-

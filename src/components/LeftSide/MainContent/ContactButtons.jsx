@@ -6,7 +6,7 @@ const Buttons = () => (
     className="button-table"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 2.5, delay: 0.5 }}
+    transition={{ duration: 1.5 }}
   >
     <table>
       <tbody>

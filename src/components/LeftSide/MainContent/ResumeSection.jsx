@@ -75,7 +75,7 @@ const ResumeSection = () => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   exit={{ opacity: 0 }}
-  transition={{ duration: 2.5, delay: 0.5 }}
+  transition={{ duration: 1.5, delay: 0.5 }}
 >
   <motion.button
     className={`button ${activeSection === "education" ? "active" : ""}`}
@@ -108,7 +108,7 @@ const ResumeSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} // Fade out when leaving
-              transition={{ duration: 0.5 }} // Adjust timing for fade-out effect
+              transition={{ duration: 2.5 }} // Adjust timing for fade-out effect
             >
               <ul>
                 <li>
@@ -127,7 +127,7 @@ const ResumeSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} // Fade out when leaving
-              transition={{ duration: 0.5 }} // Adjust timing for fade-out effect
+              transition={{ duration: 2.5 }} // Adjust timing for fade-out effect
             >
               <ul>
                 <li>
@@ -150,7 +150,7 @@ const ResumeSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} // Fade out when leaving
-              transition={{ duration: 0.5 }} // Adjust timing for fade-out effect
+              transition={{ duration: 2.5 }} // Adjust timing for fade-out effect
             >
               <h3>{skillsList[skillsIndex].category}</h3>
               <ul>

@@ -1,23 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion"; // Import AnimatePresence and motion
 import "../../../styles/main.css";
 
 const SlideContent = ({ slide }) => {
-  if (!slide) {
-    return <div className="slide-content">No content available</div>;
-  }
+  const [isVisible, setIsVisible] = useState(false);
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
+
+  useEffect(() => {
+    // Set content visibility to true when it is loaded
+    setIsVisible(true);
+
+    // Mark the initial load as false after a short delay
+    const timer = setTimeout(() => setIsInitialLoad(false), 5000); // Adjust duration if needed
+
+    return () => {
+      clearTimeout(timer);
+      setIsVisible(false);
+    };
+  }, [slide]);
 
   return (
-    <div className="slide-content">
+    <AnimatePresence mode="wait">
       {slide.image && (
-        <img
-          src={slide.image}
-          alt={slide.text || "No description available"}
+        <motion.img
+          key={slide.image} // Use a unique key to trigger re-render and exit animation
           className="slide-image"
+          src={slide.image}
+          alt={slide.text || "Image description"}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }} // Fade-out effect
+          transition={{
+            duration: isInitialLoad ? 1 : 1, // Keep existing durations
+            delay: isInitialLoad ? 0.25: 0, // Adjust delay only for initial load
+          }}
         />
       )}
-      {slide.text && <div className="slide-text">{slide.text}</div>}
-    </div>
+    </AnimatePresence>
   );
-};
+}
 
 export default SlideContent;

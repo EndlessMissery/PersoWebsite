@@ -1,7 +1,6 @@
 /* Basic styling for the images */
 .slide-image {
     border-radius: 20px;
-    z-index: 1;
     overflow-y: hidden;
     position: relative;
   }

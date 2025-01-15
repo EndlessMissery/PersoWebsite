@@ -1,86 +1,83 @@
 {
-    "appdesign": [
+  "appdesign": {
+    "categories": [
       {
-        "image": "src/assets/AppDesigns/App_1.png"
+        "name": "App1",
+        "images": ["src/assets/AppDesigns/App_1.png"]
       },
       {
-        "image": "https://example.com/image2.jpg"
+        "name": "App2",
+        "images": ["https://example.com/image2.jpg"]
       },
       {
-        "image": "https://example.com/image3.jpg"
+        "name": "App3",
+        "images": ["https://example.com/image3.jpg"]
       },
       {
-        "image": "https://example.com/image4.jpg"
+        "name": "App4",
+        "images": ["https://example.com/image4.jpg"]
       }
-    ],
-      "webdesign": [
-        { "text": "Building responsive and beautiful websites." }
-      ],
-      "bookcovers": [
-        { "text": "Creating visually striking book covers." }
-      ],
-      "illustrations": {
-        "categories": [
-          {
-            "name": "Artwork",
-            "images": [
-              "src/assets/Illustrations/Artwork/Artwork_1.jpg",
-              "src/assets/Illustrations/Artwork/Artwork_2.jpg",
-              "src/assets/Illustrations/Artwork/Artwork_3.jpg",
-              "src/assets/Illustrations/Artwork/Artwork_4.jpg",
-              "src/assets/Illustrations/Artwork/Artwork_5.jpg"  
-            ]
-          },       
-           {
-            "name": "Artwork Comic Style",
-            "images": [
-              
-              "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg",
-              "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg"
-            ]
-          },
-          {
-            "name": "Artwork Manga Style",
-            "images": [
-              
-              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg",
-              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg",
-              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg",
-              "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_4.jpg"
-            ]
-          },
-          
-  
-          {
-            "name": "Vector Art",
-            "images": [
-              
-              "src/assets/Illustrations/VectorArt/VectorArt_1.png",
-              "src/assets/Illustrations/VectorArt/VectorArt_2.png",
-              "src/assets/Illustrations/VectorArt/VectorArt_3.png"
-            ]
-          },
-          {
-            "name": "Visual Identity",
-            "images": [
-              "TBD"
-            ]
-          },
-          {
-            "name": "Original logo",
-            "images": [
-              "TBD"
-            ]
-          },
-          {
-            "name": "Logo Recreation",
-            "images": [
-              "src/assets/Illustrations/LogoRecreation/LogoRecreation_1.png",
-              "src/assets/Illustrations/LogoRecreation/LogoRecreation_2.png",
-              "src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png"
-            ]
-          }
+    ]
+  },
+  "webdesign": {
+    "categories": [
+      {
+        "name": "Web1",
+        "images": ["src/assets/Illustrations/Artwork/Artwork_3.jpg"]
+      }
+    ]
+  },
+  "bookcovers": {
+    "categories": [
+      {
+        "name": "Book1",
+        "images": ["src/assets/Illustrations/Artwork/Artwork_3.jpg"]
+      }
+    ]
+  },
+  "illustrations": {
+    "categories": [
+      {
+        "name": "Artwork",
+        "images": [
+          "src/assets/Illustrations/Artwork/Artwork_1.jpg",
+          "src/assets/Illustrations/Artwork/Artwork_2.jpg",
+          "src/assets/Illustrations/Artwork/Artwork_3.jpg",
+          "src/assets/Illustrations/Artwork/Artwork_4.jpg",
+          "src/assets/Illustrations/Artwork/Artwork_5.jpg"
+        ]
+      },
+      {
+        "name": "Artwork Comic Style",
+        "images": [
+          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg",
+          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg"
+        ]
+      },
+      {
+        "name": "Artwork Manga Style",
+        "images": [
+          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg",
+          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg",
+          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg"
+        ]
+      },
+      {
+        "name": "Vector Art",
+        "images": [
+          "src/assets/Illustrations/VectorArt/VectorArt_1.png",
+          "src/assets/Illustrations/VectorArt/VectorArt_2.png",
+          "src/assets/Illustrations/VectorArt/VectorArt_3.png"
+        ]
+      },
+      {
+        "name": "Logo Recreation",
+        "images": [
+          "src/assets/Illustrations/LogoRecreation/LogoRecreation_1.png",
+          "src/assets/Illustrations/LogoRecreation/LogoRecreation_2.png",
+          "src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png"
         ]
       }
-    }
-    
+    ]
+  }
+}
