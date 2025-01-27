@@ -1,0 +1,52 @@
+body {
+  font-family: "Kode Mono", serif;
+  background-image: url('./assets/Background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(225, 230, 230, 1);
+  z-index: -9999;
+  overflow: hidden;
+} 
+
+* {
+    font-family: "Smooch Sans", serif;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    
+}
+
+.Background {
+    background-color: rgba(225, 230, 230, 1);
+    animation: fadeOutBackground 1.5s ease-in-out 1s forwards; /* Longer duration and smoother easing */
+    
+}
+
+@keyframes fadeOutBackground {
+    0% {
+        background-color: rgba(225, 230, 230, 0.85);
+    }
+    50% {
+        background-color: rgba(225, 230, 230, 0.5); /* Smoother transition */
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+button {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #3f3f3f;
+}
+
+h2 {
+    color: #3f3f3f;
+}
+

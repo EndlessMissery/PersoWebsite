@@ -1,0 +1,72 @@
+/* General styles for content container */
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Makes the container take full height of the viewport */
+    overflow: hidden; /* Prevents scrolling */
+    justify-content: flex-start; /* Ensures content is aligned at the top initially */
+    background-color: transparent;
+  }
+  
+  /* Ensures content section fills the available height */
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 20px;
+    width: 50%; /* Set the width to 50% */
+    margin-left: 3%; /* Adjust this value to move it more to the left */
+    margin-right: 0; /* Ensures there is no space on the right */
+    margin-top: 8%; /* Adjusts the distance from the top of the screen */
+    /* Optional: You can adjust margin-top to move it further down if needed */
+  }
+  
+  /* Ensures each section fills the height and maintains the layout */
+  .about-section,
+  .resume-section,
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Optional: If you want the sections to have a fixed height */
+  .content-box > section {
+    height: 100%; /* Ensures each section takes up the same space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content vertically if needed */
+  }
+  
+  
+  
+  .intro {
+      color: rgba(6,6,6,0.25);
+      font-size: 24px;
+      font-weight: 100;
+  }
+  
+  .name-intro {
+      color: #3f3f3f;
+      font-size: 31px;
+      margin-top: -15px;
+      font-weight: 400;
+  }
+  
+  hr {
+      border: none;
+      height: 2px; /* Height of the line */
+      background: linear-gradient(to right, #3f3f3f, transparent);
+      width: 300px;
+      margin-top: -20px;
+      margin-left: 0px;
+    }
+  
+  .intro-desc {
+      color: #3f3f3f;
+      font-size: 12px;
+      font-weight: lighter;
+      margin-top: 20px;
+  }   
+  

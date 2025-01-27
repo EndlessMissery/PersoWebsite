@@ -1,0 +1,17 @@
+/* Basic styling for the images */
+.slide-image {
+    border-radius: 20px;
+    overflow-y: hidden;
+    position: relative;
+    height: 100%;
+    width: 750px;
+    zoom: 105%;
+
+  }
+  
+  @media (min-width: 2550px) {
+    .slide-image {
+      zoom: 125%;
+    }
+  }
+

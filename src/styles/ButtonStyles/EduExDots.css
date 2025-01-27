@@ -1,0 +1,64 @@
+/* Dot Containers with absolute positioning */
+.education-dots-container,
+.experience-dots-container,
+.skills-dots-container {
+  display: flex;
+  justify-content: center; /* Centers the dots horizontally */
+  position: absolute; /* Ensures dots are positioned at the bottom of the scrollable box */
+  bottom: 10px; /* Default for Education dots */
+  width: 100%; /* Ensures the dots span the full width of the container */
+  left: 0; /* Ensure it's aligned from the left */
+  gap: 10px;
+}
+
+/* Adjust position for Work Experience Dots */
+.experience-dots-container {
+  bottom: 10px; /* Positioning the Work Experience dots 20px lower */
+}
+
+/* Adjust position for Skills Dots */
+.skills-dots-container {
+  bottom: 10px; /* Positioning the Skills dots */
+}
+
+/* Individual Dot */
+.education-dot,
+.experience-dot,
+.skills-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+/* Active Dot */
+.education-dot.active,
+.experience-dot.active,
+.skills-dot.active {
+  background-color: #3f3f3f;
+  cursor: default;
+}
+
+/* Active Dot */
+.education-dot:not(.active),
+.experience-dot:not(.active),
+.skills-dot:not(.active) {
+  background-color: rgba(6, 6, 6, 0.25);
+}
+
+.education-dot:hover,
+.experience-dot:hover,
+.skills-dot:hover {
+  background-color: #3f3f3f;
+}
+
+.education-dot.active:hover,
+.experience-dot.active:hover,
+.skills-dot.active:hover {
+  background-color: #3f3f3f;
+  cursor: default;
+}
+

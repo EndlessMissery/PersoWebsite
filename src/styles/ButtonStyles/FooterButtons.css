@@ -1,0 +1,91 @@
+footer {
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  top: -150px;
+  z-index: 1000;
+}
+
+/* Slider for the active background */
+.footer-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px; /* Match the width of the buttons */
+  height: 50px; /* Match the height of the buttons */
+  background-color: #3f3f3f;
+  filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.1)); /* Optional: Add a shadow */
+  border-radius: 20px;
+  transition: transform 0.3s ease-out; /* Smooth transition */
+  z-index: -1; /* Behind the buttons */
+}
+
+/* Scoped Button Styles for Footer */
+footer button {
+  top: 10px;
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #3f3f3f;
+  transition: all 0.3s ease-out; /* Uniform animation speed */
+  position: relative;
+}
+
+/* Inactive button state */
+footer button:not(.active) {
+  border-radius: 20px;
+  color: rgba(6, 6, 6, 0.25);
+  transition: all 0.3s ease; /* Uniform animation speed */
+}
+
+/* Hover state for inactive buttons */
+footer button:not(.active):hover {
+  background-color: transparent;
+  color: #3f3f3f;
+  transition: all 0.3s ease; /* Uniform animation speed */
+}
+
+/* Active button state */
+footer button.active {
+  color: rgb(225, 230, 230);
+  cursor: default;
+}
+
+/* Scoped Tab Button */
+footer .tab {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #3f3f3f;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Uniform animation speed */
+}
+
+footer .tab:hover {
+  background-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
+}
+
+footer .tab.active {
+  color: rgb(225, 230, 230);
+  background-color: transparent;
+}
+
+/* Resize the image for different screen sizes */
+@media (min-width: 2550px) {
+  footer {
+      left: 230px;
+  }
+}
