@@ -116,7 +116,8 @@
       },
       {
         "name": "TIME - Lukashenko",
-        "images": ["src/assets/BookCovers/Cover_2.png"
+        "images": ["src/assets/BookCovers/Cover_2.png",
+                   "src/assets/BookCovers/Cover_2_1.png"
                    ]
       },
       {

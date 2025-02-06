@@ -26,7 +26,6 @@ main h1 {
   }
     
   
-  
   /* Layout */
   .left-side {
     display: flex;
@@ -40,6 +39,26 @@ main h1 {
     flex: 1;
   }
   
-  
-  
-  
+  /* Mobile-specific styles */
+@media (max-width: 768px) {
+  .intro, .name-intro, .intro-desc {
+    font-size: 1.5rem; /* Zmenší fonty pro mobilní verzi */
+  }
+
+  .intro-desc {
+    font-size: 1rem; /* Menší text pro popis */
+  }
+
+  .content-box {
+    padding: 20px; /* Přidáme padding pro mobilní zařízení */
+  }
+
+  .name-intro {
+    font-size: 2.5rem; /* Zvětší název pro mobilní verzi */
+  }
+
+  /* Úprava pro lepší čitelnost textu */
+  h1, h2 {
+    word-wrap: break-word;
+  }
+}

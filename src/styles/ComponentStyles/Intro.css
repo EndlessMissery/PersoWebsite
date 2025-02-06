@@ -22,24 +22,6 @@
     /* Optional: You can adjust margin-top to move it further down if needed */
   }
   
-  /* Ensures each section fills the height and maintains the layout */
-  .about-section,
-  .resume-section,
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  /* Optional: If you want the sections to have a fixed height */
-  .content-box > section {
-    height: 100%; /* Ensures each section takes up the same space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Align content vertically if needed */
-  }
-  
-  
   
   .intro {
       color: rgba(6,6,6,0.25);
@@ -65,8 +47,37 @@
   
   .intro-desc {
       color: #3f3f3f;
-      font-size: 12px;
       font-weight: lighter;
       margin-top: 20px;
   }   
   
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .content-box {
+    padding: 10px; /* Slightly reduced padding for mobile */
+    width: 90%; /* Make content box more responsive */
+  }
+
+  .intro, .name-intro, .intro-desc {
+    font-size: 1.2rem; /* Adjusted font sizes for mobile */
+  }
+
+  .intro-desc {
+    font-size: 1rem; /* Clearer text for description */
+  }
+
+  .name-intro {
+    font-size: 2rem; /* Bigger name for better visibility on mobile */
+  }
+
+  hr {
+    display: none;
+    width: 80%; /* More responsive width for the horizontal rule */
+    margin-top: 20px; /* Proper margin for spacing */
+  }
+
+  /* Mobile-friendly layout for text */
+  .intro, .name-intro, .intro-desc {
+    text-align: center; /* Center text for better look on mobile */
+  }
+}

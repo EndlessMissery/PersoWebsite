@@ -4,10 +4,10 @@ import { motion, useAnimation } from "framer-motion";
 const RightHeader = ({ rightActiveTab, setrightActiveTab }) => {
   // Map tab keys to display text
   const tabLabels = {
+    bookcovers: "Cover",
     appdesign: "App Design",
     webdesign: "Web Design",
     visualidentities: "Identity",
-    bookcovers: "Cover",
     illustrations: "Mix Art"
   };
 

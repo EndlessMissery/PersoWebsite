@@ -104,4 +104,33 @@
     }
   }
   
+/* Responsive styles for mobile (max-width 768px) */
+@media (max-width: 768px) {
+  /* Scrollable Box for Mobile */
+  .scrollable-box {
+    height: 200px; /* Adjusted for smaller screens */
+    padding: 10px; /* Less padding for mobile */
+  }
 
+  /* Buttons container */
+  .buttons-container {
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center; /* Center buttons on mobile */
+  }
+
+  /* Button style */
+  .buttons-container button {
+    padding: 10px 15px; /* Adjusted padding */
+    font-size: 1rem; /* Slightly increased font size */
+    width: 100%; /* Ensure buttons take full width */
+  }
+
+  /* Resume Section */
+  .resume-section h2 {
+    font-size: 1.2rem; /* Smaller header for mobile */
+  }
+
+  .resume-section li {
+    font-size: 1rem; /* Ensure text is readable on smaller screens */
+  }
+}

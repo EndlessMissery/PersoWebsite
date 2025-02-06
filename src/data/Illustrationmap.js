@@ -41,6 +41,7 @@ import Book2 from '../assets/BookCovers/Cover_1_2.png';
 import Book3 from '../assets/BookCovers/Cover_1_3.png';
 import Book4 from '../assets/BookCovers/Cover_1_4.png';
 import Book5 from '../assets/BookCovers/Cover_2.png';
+import Book6 from '../assets/BookCovers/Cover_2_1.png';
 
 
 
@@ -85,11 +86,12 @@ const illustrationMap = {
   'src/assets/LogoDesigns/Logo_1.png': Logo4,
 
   // BOOK COVERS MAP
-  'src/assets/BookCovers/Cover_1.png': Book1,
-  'src/assets/BookCovers/Cover_1_2.png': Book2,
+  'src/assets/BookCovers/Cover_1.png': Book2,
+  'src/assets/BookCovers/Cover_1_2.png': Book1,
   'src/assets/BookCovers/Cover_1_3.png': Book3,
   'src/assets/BookCovers/Cover_1_4.png': Book4,
-  'src/assets/BookCovers/Cover_2.png': Book5,
+  'src/assets/BookCovers/Cover_2.png': Book6,
+  'src/assets/BookCovers/Cover_2_1.png': Book5,
 };
 
 export default illustrationMap;

@@ -20,22 +20,28 @@
     gap: 10px;
     z-index: 10;
     transform: translateX(-50%);
+    background-color: rgba(6, 6, 6, 0.5);
+    border-radius: 25px;
+    padding: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .dot {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-    
+
+
   }
   
   .dot.active {
-    background-color: #3f3f3f;
+    background-color: rgba(225, 230,230, 1);
+
   }
 
   .dot:not(.active) {
-    background-color: rgba(6, 6, 6, 0.25);
+    background-color: rgba(225, 230,230, .25);
   }
   
   motion.p,

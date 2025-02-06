@@ -34,7 +34,7 @@
     z-index: 4;
     width: 200px;
     font-size: 40px;
-    background-color: rgba(6, 6, 6, .25);
+    background-color: rgba(6, 6, 6, .5);
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 20px;
@@ -67,6 +67,19 @@
   
     .right-content-box {
       height: 900px;
+      width: 100%;
+    }
+  }
+
+
+  @media screen and (min-width: 3150px) {
+    .right-content {
+      width: 1500px;
+      margin-left: -105px;
+    }
+  
+    .right-content-box {
+      height: 1500px;
       width: 100%;
     }
   }

@@ -83,7 +83,7 @@
 
 @media only screen and (min-width: 2560px) {
   .right-side {
-      left: 1450px; /* Move 300px to the right on 2K resolution */
+      left: 1550px; /* Move 300px to the right on 2K resolution */
       top: 175px;
   }
 
@@ -94,6 +94,24 @@
   .right-tab,
 .right-side-tab {
   left: -50px;
+
+}
+}
+
+@media screen and (min-width: 3150px) {
+  .right-side {
+    left: 2000px; /* Move 300px to the right on 2K resolution */
+    top: 175px;
+}
+
+.right-side-slider {
+  left: 0px;
+
+}
+
+.right-tab,
+.right-side-tab {
+left: 250px;
 
 }
 }

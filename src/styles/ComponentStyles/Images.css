@@ -15,3 +15,8 @@
     }
   }
 
+  @media screen and (min-width: 3150px) {
+    .slide-image {
+      zoom: 225%;
+    }
+  }

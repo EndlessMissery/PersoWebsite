@@ -24,3 +24,14 @@
     }
 
   }
+  @media screen and (min-width: 3150px) {
+    .right-content {
+      width: 1500px;
+      margin-left: -105px;
+    }
+  
+    .right-content-box {
+      height: 1500px;
+      width: 100%;
+    }
+  }

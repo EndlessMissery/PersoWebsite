@@ -89,3 +89,56 @@ footer .tab.active {
       left: 230px;
   }
 }
+
+
+
+
+
+@media (max-width: 768px) {
+  footer .tab:hover {
+    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
+    background-color: #3f3f3f;
+  }
+
+  .footer-tabs {
+    position: absolute;
+    top: 75px;
+    flex-direction: row; /* Zarovná tlačítka vedle sebe */
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer button {
+    width: auto; /* Přizpůsobí šířku ikonám */
+    height: 50px;
+    padding: 10px;
+  }
+
+  .text {
+    display: none; /* Skryje text na mobilní verzi */
+  }
+
+  .icon {
+    font-size: 24px; /* Zvětší ikony pro lepší čitelnost */
+    color: #b0b0b0; /* Výchozí šedá barva pro neaktivní ikony */
+    transition: color 0.3s ease; /* Hladký přechod při změně barvy */
+  }
+
+  .icon:hover {
+    color: rgb(225, 230, 230); /* Tmavá barva pro aktivní ikonu */
+  }
+
+  .footer-slider {
+    width: 50px; /* Přizpůsobí slider šířce ikon */
+    height: 50px;
+    border-radius: 50%; /* Kulatý tvar slideru */
+    background-color: transparent;
+  }
+}
+
+/* Skryje ikony pro desktop verzi */
+@media (min-width: 769px) {
+  .icon {
+    display: none; /* Skryje ikony na desktopu */
+  }
+}

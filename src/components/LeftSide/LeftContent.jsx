@@ -16,7 +16,7 @@ const Content = ({ activeTab }) => {
   return (
     <div className="content">
       {/* Render the active tab */}
-      <div className="content-box">
+      <div className={`content-box ${activeTab}`}>
         {tabs[activeTab]}
       </div>
       {/* Corner text with typewriter effect */}
@@ -27,4 +27,3 @@ const Content = ({ activeTab }) => {
 };
 
 export default Content;
-

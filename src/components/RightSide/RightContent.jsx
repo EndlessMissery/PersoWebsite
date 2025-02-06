@@ -11,10 +11,10 @@ import { motion, AnimatePresence } from 'framer-motion'; // Import motion and An
 
 const RightContent = ({ rightActiveTab }) => {
   const [slideIndex, setSlideIndex] = useState({
+    bookCover: 0,
     appDesign: 0,
     webDesign: 0,
     visualidentities: 0,
-    bookCover: 0,
     illustrations: 0,
   });
   const [selectedCategory, setSelectedCategory] = useState(0);
