@@ -1,14 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
+import useTranslationCustom from "../../../hooks/useTranslationCustom";
 
 const RightHeader = ({ rightActiveTab, setrightActiveTab }) => {
+    const { t, language } = useTranslationCustom();
   // Map tab keys to display text
   const tabLabels = {
-    bookcovers: "Cover",
-    appdesign: "App Design",
-    webdesign: "Web Design",
-    visualidentities: "Identity",
-    illustrations: "Mix Art"
+    bookcovers: t("rightHeader.cover"),
+    appdesign: t("rightHeader.appDesign"),
+    webdesign: t("rightHeader.webDesign"),
+    visualidentities: t("rightHeader.identity"),
+    illustrations: t("rightHeader.mixArt"),
   };
 
   const controls = useAnimation();

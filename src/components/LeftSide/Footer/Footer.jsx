@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { FaUser, FaFileAlt, FaEnvelope } from "react-icons/fa"; // Ikony
+import { FaUser, FaFileAlt, FaEnvelope } from "react-icons/fa";
+import useTranslationCustom from "../../../hooks/useTranslationCustom"; // Importuj custom hook
 
 const Footer = ({ activeTab, setActiveTab }) => {
+  const { t } = useTranslationCustom(); // Použití custom hooku pro překlady
+
   const tabLabels = {
-    about: { text: "About Me", icon: <FaUser /> },
-    resume: { text: "Resume", icon: <FaFileAlt /> },
-    contact: { text: "Contact Me", icon: <FaEnvelope /> },
+    about: { text: t("footer.about"), icon: <FaUser /> },
+    resume: { text: t("footer.resume"), icon: <FaFileAlt /> },
+    contact: { text: t("footer.contact"), icon: <FaEnvelope /> },
   };
 
   const controls = useAnimation();

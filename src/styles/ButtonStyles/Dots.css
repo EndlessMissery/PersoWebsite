@@ -18,9 +18,9 @@
     top: 25px; /* Place the dots at the top of the content box */
     left: 50%;
     gap: 10px;
-    z-index: 10;
+    z-index: 10000;
     transform: translateX(-50%);
-    background-color: rgba(6, 6, 6, 0.5);
+    background-color: rgba(6, 6, 6, 0.35);
     border-radius: 25px;
     padding: 7.5px;
     padding-left: 15px;
@@ -31,6 +31,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    z-index: 10000;
 
 
   }

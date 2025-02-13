@@ -1,29 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import CaseStudyButton from './CaseStudyButton';  // Import the new CaseStudyButton component
 
 const CategoryButtons = ({ content, rightActiveTab, selectedCategory, setSelectedCategory }) => {
+  const { t } = useTranslation();
   const categories = content[rightActiveTab]?.categories || [];
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-  const [isVisible, setIsVisible] = useState(false); // State to control visibility after the delay
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Reset selectedCategory to the first one when rightActiveTab changes
     setSelectedCategory(0);
   }, [rightActiveTab, setSelectedCategory]);
 
   useEffect(() => {
-    // Delay visibility by 7 seconds on refresh
     const timer = setTimeout(() => {
       setIsVisible(true);
-      setIsInitialLoad(false); // Mark as no longer initial load after the delay
+      setIsInitialLoad(false);
     }, 4500);
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
+    return () => clearTimeout(timer);
   }, []);
 
   if (!isVisible) {
-    return null; // Do not render the buttons until the delay has passed
+    return null;
   }
+
+  const isAppOrWebDesignTab = rightActiveTab === 'appdesign' || rightActiveTab === 'webdesign';
 
   return (
     <AnimatePresence mode="wait">
@@ -33,10 +36,7 @@ const CategoryButtons = ({ content, rightActiveTab, selectedCategory, setSelecte
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{
-          duration: isInitialLoad ? 0.75 : 0.75, // Same duration for animations
-          delay: isInitialLoad ? 0 : 0, // Delay only for the initial load
-        }}
+        transition={{ duration: 0.75, delay: isInitialLoad ? 0 : 0 }}
       >
         {categories.map((category, index) => (
           <button
@@ -44,9 +44,14 @@ const CategoryButtons = ({ content, rightActiveTab, selectedCategory, setSelecte
             onClick={() => setSelectedCategory(index)}
             className={selectedCategory === index ? 'active' : ''}
           >
-            {category.name}
+            {t(category.name)} {/* Translate category name */}
           </button>
         ))}
+
+        {/* Only show the "Open Case Study" button for App Design and Web Design tabs */}
+        {isAppOrWebDesignTab && (
+          <CaseStudyButton categoryName={selectedCategory + 1} rightActiveTab={rightActiveTab} />
+        )}
       </motion.div>
     </AnimatePresence>
   );

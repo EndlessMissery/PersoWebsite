@@ -7,8 +7,9 @@
   position: absolute; /* Ensures dots are positioned at the bottom of the scrollable box */
   bottom: 10px; /* Default for Education dots */
   width: 100%; /* Ensures the dots span the full width of the container */
-  left: 0; /* Ensure it's aligned from the left */
+  left: -10px; /* Ensure it's aligned from the left */
   gap: 10px;
+  scale: 0.9;
 }
 
 /* Adjust position for Work Experience Dots */

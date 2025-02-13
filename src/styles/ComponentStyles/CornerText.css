@@ -17,3 +17,20 @@
     text-align: left;
   }
 
+  @media (min-width: 2550px) {
+    .top-right {
+      font-size: 24px;
+    }
+    
+    .bottom-left {
+      font-size: 24px;
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    .top-right, .bottom-left
+    {
+      display: none;
+    }
+  }

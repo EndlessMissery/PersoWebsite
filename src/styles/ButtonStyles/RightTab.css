@@ -1,34 +1,31 @@
 .right-side {
-  position: fixed;
-  top: 50px;
-  left: 950px;
+  position: absolute;
+  top: 35px;
+  left: 950px; 
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   gap: 10px;
   padding: 10px;
   border-radius: 8px;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1; /* Ensure it stays on top */
+  
 }
 
 .right-side-slider {
   position: absolute;
-  top: 20px;
-  left: 3px;
-  gap: 30px;
-  transform: translateY(-50%);
+  top: -5px;
+  left: 2px;
   width: 150px; /* Match the width of the buttons */
   height: 50px; /* Match the height of the buttons */
   background-color: #c04949;
-  filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.1)); /* Optional: Add a shadow */
   border-radius: 20px;
   transition: transform 0.3s ease-out; /* Smooth transition */
-  z-index: -1; /* Behind the buttons */
 }
 
 .right-tab,
 .right-side-tab {
-  left: 10px;
+  top: -15px;
+  left: -940px;
   width: 150px;
   height: 50px;
   padding: 10px 20px;
@@ -65,35 +62,34 @@
   /*cursor: default;*/
 }
 
-@media (min-width: 2550px) {
-  .right-side {
-      left: 1450px; /* Move 300px to the right on 2K resolution */
-      top: 175px;
-  }
-
-  .right-side-slider {
-    left: 0px;
-  }
-
-  .right-tab,
-.right-side-tab {
-  left: -50px;
-}
-}
-
 @media only screen and (min-width: 2560px) {
-  .right-side {
-      left: 1550px; /* Move 300px to the right on 2K resolution */
-      top: 175px;
-  }
+.right-side {
+  position: absolute; /* Change to absolute positioning */
+  top: 35px;           /* Keep the same top position */
+  left: 950px;         /* Keep the same left position */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1; /* Ensure it stays on top */
+}
 
-  .right-side-slider {
-    left: 0px;
-  }
+.right-side-slider {
+  position: absolute; /* Keep absolute positioning for the slider */
+  top: 90px;
+  left: 2px;
+  width: 150px; /* Match the width of the buttons */
+  height: 50px; /* Match the height of the buttons */
+  background-color: #c04949;
+  border-radius: 20px;
+  transition: transform 0.3s ease-out; /* Smooth transition */
+}
 
   .right-tab,
 .right-side-tab {
-  left: -50px;
+  top: 80px;
+  left: -350px;
 
 }
 }
@@ -108,6 +104,8 @@
   left: 0px;
 
 }
+
+
 
 .right-tab,
 .right-side-tab {

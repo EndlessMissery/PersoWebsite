@@ -1,40 +1,41 @@
+/* General styling for the category buttons container */
 .category-buttons {
-    position: absolute;
-    top: 50%;
-    left: -200px;
-    margin-left: 20px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  position: absolute;
+  top: 50%;
+  left: -225px;
+  margin-left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.category-buttons button {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  margin-left: -55px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(6, 6, 6, 0.25);
+  transition: color 0.3s ease-out;
+  position: relative;
+  text-align: right; /* Ensure the text is aligned to the left */
+}
+
+/* Hover effect for category buttons */
+.category-buttons button:hover {
+  color: #3f3f3f;
+}
+
+/* Styling for the active category button */
+.category-buttons .active {
+  color: #3f3f3f;
+  cursor: default;
   
-  .category-buttons button {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    margin-left: -80px;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: rgba(6, 6, 6, 0.25);
-    transition: color 0.5s ease-out;
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    text-align: right; /* Ensure the text is aligned to the left */
-  }
-  
-  /* Specifically target buttons inside .category-buttons to prevent global footer button styles from affecting them */
-  .category-buttons button:hover {
-    color: #3f3f3f;
-    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
-  }
-  
-  .category-buttons .active {
-    color: #3f3f3f;
-    cursor: default;
-    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
-  }
-  
+}
+
+
+
+

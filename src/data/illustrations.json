@@ -2,72 +2,88 @@
   "appdesign": {
     "categories": [
       {
-        "name":"APPLICATION DESIGN 1",
-        "images": ["src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png"]
+        "name": "appdesign.category1",
+        "images": [
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png"
+        ],
+        "pdf": "src/assets/AppDesigns/App_1.png"
       },
       {
-        "name":"APPLICATION DESIGN 2",
-        "images": ["src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png"]
+        "name": "appdesign.category2",
+        "images": [
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png"
+        ],
+        "pdf": "src/assets/WebDesigns/Web_1.png"
       },
       {
-        "name":"APPLICATION DESIGN 3",
-        "images": ["src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png"]
+        "name": "appdesign.category3",
+        "images": [
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png"
+        ],
+        "pdf": "path/to/appdesign_case_study_3.pdf"
       },
       {
-        "name":"APPLICATION DESIGN 4",
-        "images": ["src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png"]
-      },
-      {
-        "name":"APPLICATION DESIGN 5",
-        "images": ["src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png",
-                  "src/assets/AppDesigns/App_1.png"]
+        "name": "appdesign.category4",
+        "images": [
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1.png"
+        ],
+        "pdf": "path/to/appdesign_case_study_4.pdf"
       }
     ]
   },
-
   "webdesign": {
     "categories": [
       {
-        "name":"WEBSITE DESIGN 1",
-        "images": ["src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png"]
+        "name": "webdesign.category1",
+        "images": [
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png"
+        ],
+        "pdf": "path/to/webdesign_case_study_1.pdf"
       },
       {
-        "name":"WEBSITE DESIGN 2",
-        "images": ["src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png"]
+        "name": "webdesign.category2",
+        "images": [
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png"
+        ],
+        "pdf": "path/to/webdesign_case_study_2.pdf"
       },
       {
-        "name":"WEBSITE DESIGN 3",
-        "images": ["src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png"]
+        "name": "webdesign.category3",
+        "images": [
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png"
+        ],
+        "pdf": "path/to/webdesign_case_study_3.pdf"
       },
       {
-        "name":"WEBSITE DESIGN 4",
-        "images": ["src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png",
-                   "src/assets/WebDesigns/Web_1.png"]
+        "name": "webdesign.category4",
+        "images": [
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.png"
+        ],
+        "pdf": "path/to/webdesign_case_study_4.pdf"
       }
     ]
   },
@@ -75,32 +91,40 @@
   "visualidentities": {
     "categories": [
       {
-        "name": "VISUAL IDENTITY 1",
-        "images": ["src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png"]
+        "name": "identity.category1",
+        "images": [
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png"
+        ]
       },
       {
-        "name": "VISUAL IDENTITY 2",
-        "images": ["src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png"]
+        "name": "identity.category2",
+        "images": [
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png"
+        ]
       },
       {
-        "name": "VISUAL IDENTITY 3",
-        "images": ["src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png"]
+        "name": "identity.category3",
+        "images": [
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png"
+        ]
       },
       {
-        "name": "VISUAL IDENTITY 4",
-        "images": ["src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png",
-                   "src/assets/LogoDesigns/Logo_1.png"]
+        "name": "identity.category4",
+        "images": [
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png",
+          "src/assets/LogoDesigns/Logo_1.png"
+        ]
       }
     ]
   },
@@ -108,27 +132,34 @@
   "bookcovers": {
     "categories": [
       {
-        "name": "ELLE - Tyla",
-        "images": ["src/assets/BookCovers/Cover_1.png",
-                   "src/assets/BookCovers/Cover_1_2.png",
-                   "src/assets/BookCovers/Cover_1_3.png",
-                   "src/assets/BookCovers/Cover_1_4.png"]
+        "name": "cover.category1",
+        "images": [
+          "src/assets/BookCovers/Cover_1.webp",
+          "src/assets/BookCovers/Cover_1_2.webp",
+          "src/assets/BookCovers/Cover_1_3.webp",
+          "src/assets/BookCovers/Cover_1_4.webp"
+        ]
       },
       {
-        "name": "TIME - Lukashenko",
-        "images": ["src/assets/BookCovers/Cover_2.png",
-                   "src/assets/BookCovers/Cover_2_1.png"
-                   ]
+        "name": "cover.category2",
+        "images": [
+          "src/assets/BookCovers/Cover_2.webp",
+          "src/assets/BookCovers/Cover_2_1.webp"
+        ]
       },
       {
-        "name": "BOOK DESIGN 3",
-        "images": ["src/assets/BookCovers/Book_1.png",
-                   "src/assets/BookCovers/Book_1.png"]
+        "name": "cover.category3",
+        "images": [
+          "src/assets/BookCovers/Book_1.png",
+          "src/assets/BookCovers/Book_1.png"
+        ]
       },
       {
-        "name": "BOOK DESIGN 4",
-        "images": ["src/assets/BookCovers/Book_1.png",
-                   "src/assets/BookCovers/Book_1.png"]
+        "name": "cover.category4",
+        "images": [
+          "src/assets/BookCovers/Book_1.png",
+          "src/assets/BookCovers/Book_1.png"
+        ]
       }
     ]
   },
@@ -136,7 +167,7 @@
   "illustrations": {
     "categories": [
       {
-        "name": "ARTWORK",
+        "name": "mixart.category1",
         "images": [
           "src/assets/Illustrations/Artwork/Artwork_1.jpg",
           "src/assets/Illustrations/Artwork/Artwork_2.jpg",
@@ -145,35 +176,31 @@
           "src/assets/Illustrations/Artwork/Artwork_5.jpg"
         ]
       },
-
       {
-        "name": "ARTWORK: COMIC STYLE",
+        "name": "mixart.category2",
         "images": [
           "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg",
           "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg"
         ]
       },
-
       {
-        "name": "ARTWORK: MANGA STYLE",
+        "name": "mixart.category3",
         "images": [
           "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg",
           "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg",
           "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg"
         ]
       },
-
       {
-        "name": "VECTOR ART",
+        "name": "mixart.category4",
         "images": [
           "src/assets/Illustrations/VectorArt/VectorArt_1.png",
           "src/assets/Illustrations/VectorArt/VectorArt_2.png",
           "src/assets/Illustrations/VectorArt/VectorArt_3.png"
         ]
       },
-      
       {
-        "name": "LOGO RECREATION",
+        "name": "mixart.category5",
         "images": [
           "src/assets/Illustrations/LogoRecreation/LogoRecreation_1.png",
           "src/assets/Illustrations/LogoRecreation/LogoRecreation_2.png",

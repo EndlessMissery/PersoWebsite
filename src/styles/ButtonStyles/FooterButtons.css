@@ -9,7 +9,6 @@ footer {
   padding: 10px;
   position: relative;
   top: -150px;
-  z-index: 1000;
 }
 
 /* Slider for the active background */
@@ -20,7 +19,6 @@ footer {
   width: 150px; /* Match the width of the buttons */
   height: 50px; /* Match the height of the buttons */
   background-color: #3f3f3f;
-  filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.1)); /* Optional: Add a shadow */
   border-radius: 20px;
   transition: transform 0.3s ease-out; /* Smooth transition */
   z-index: -1; /* Behind the buttons */
@@ -39,6 +37,7 @@ footer button {
   color: #3f3f3f;
   transition: all 0.3s ease-out; /* Uniform animation speed */
   position: relative;
+  scale: 1.2;
 }
 
 /* Inactive button state */
@@ -96,8 +95,7 @@ footer .tab.active {
 
 @media (max-width: 768px) {
   footer .tab:hover {
-    filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
-    background-color: #3f3f3f;
+    display: none;
   }
 
   .footer-tabs {
@@ -106,6 +104,7 @@ footer .tab.active {
     flex-direction: row; /* Zarovná tlačítka vedle sebe */
     justify-content: center;
     width: 100%;
+    display: none;
   }
 
   footer button {
@@ -129,10 +128,7 @@ footer .tab.active {
   }
 
   .footer-slider {
-    width: 50px; /* Přizpůsobí slider šířce ikon */
-    height: 50px;
-    border-radius: 50%; /* Kulatý tvar slideru */
-    background-color: transparent;
+    display: none;
   }
 }
 

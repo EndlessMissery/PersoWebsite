@@ -1,0 +1,92 @@
+.language-switcher {
+  position: absolute;
+  top: 94%; /* Adjust positioning */
+  right: 3%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out
+}
+
+.language-icon {
+  background: transparent;
+  border: none;
+  font-size: 36px;
+  color: rgba(6,6,6,0.25); /* Default opacity of the globe icon */
+  padding: 10px;
+  cursor: default;
+  transition: all 0.3s ease-in-out
+}
+
+.language-icon.active {
+  cursor: default;
+  transition: all 0.3s ease-in-out;
+}
+
+.language-icon:hover {
+  cursor: pointer;
+}
+
+
+
+
+.language-options {
+  position: absolute;
+  top: -70px; /* Position options above the globe */
+  right: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks when hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.language-options.open {
+  opacity: 1;
+  pointer-events: auto; /* Allow clicks when the options are visible */
+  transform: translateY(-10px); /* "Pop-out" effect */
+}
+
+.language-options button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1.5;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.language-options button:hover {
+  transform: scale(1.2);
+}
+
+.language-options button.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.language-options button:not(.active) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.language-options button:focus {
+  outline: none;
+  cursor: default;
+}
+
+.flag-icon {
+  left: 5px;
+  top: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 50%;
+}

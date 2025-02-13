@@ -15,10 +15,24 @@
     flex-grow: 1;
     overflow: hidden;
     padding: 20px;
-    width: 50%; /* Set the width to 50% */
+    width: 50%;
+    height: 50%; /* Set the width to 50% */
     margin-left: 3%; /* Adjust this value to move it more to the left */
     margin-right: 0; /* Ensures there is no space on the right */
     margin-top: 8%; /* Adjusts the distance from the top of the screen */
+    /* Optional: You can adjust margin-top to move it further down if needed */
+  }
+
+  .content-box-about {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 20px;
+    width: 50%; /* Set the width to 50% */
+    margin-left: 3%; /* Adjust this value to move it more to the left */
+    margin-right: 0; /* Ensures there is no space on the right */
+    margin-top: 8px; /* Adjusts the distance from the top of the screen */
     /* Optional: You can adjust margin-top to move it further down if needed */
   }
   
@@ -28,12 +42,25 @@
       font-size: 24px;
       font-weight: 100;
   }
+
+  .intro-about {
+    color: rgba(6,6,6,0.25);
+    font-size: 24px;
+    font-weight: 100;
+  }
   
   .name-intro {
       color: #3f3f3f;
       font-size: 31px;
-      margin-top: -15px;
       font-weight: 400;
+      margin-top: -15px;
+  }
+
+  .name-intro-about {
+    color: #3f3f3f;
+    font-size: 31px;
+    margin-top: -15px;
+    font-weight: 400;
   }
   
   hr {
@@ -49,7 +76,17 @@
       color: #3f3f3f;
       font-weight: lighter;
       margin-top: 20px;
+      line-height: 25px;
   }   
+
+
+
+
+  @media (min-width: 2550px) {
+    .content-box-about {
+      margin-top: 35px;
+    }
+  }
   
 /* Mobile-specific styles */
 @media (max-width: 768px) {

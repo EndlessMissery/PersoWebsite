@@ -108,29 +108,27 @@
 @media (max-width: 768px) {
   /* Scrollable Box for Mobile */
   .scrollable-box {
-    height: 200px; /* Adjusted for smaller screens */
-    padding: 10px; /* Less padding for mobile */
+    height: 300px; /* Adjusted for smaller screens */
+    width: 100%;
+    padding: 0px; /* Less padding for mobile */
+    scale: .75;
+    top: 50px;
+    position: absolute;
   }
 
   /* Buttons container */
   .buttons-container {
-    flex-direction: column; /* Stack buttons vertically */
     justify-content: center; /* Center buttons on mobile */
+    position: absolute;
+    height: 100px;
+    width: 0px;
+    display: grid;
   }
 
   /* Button style */
   .buttons-container button {
-    padding: 10px 15px; /* Adjusted padding */
-    font-size: 1rem; /* Slightly increased font size */
-    width: 100%; /* Ensure buttons take full width */
-  }
+    width: 10%; /* Ensure buttons take full width */
+    margin: 0 10px;
 
-  /* Resume Section */
-  .resume-section h2 {
-    font-size: 1.2rem; /* Smaller header for mobile */
-  }
-
-  .resume-section li {
-    font-size: 1rem; /* Ensure text is readable on smaller screens */
   }
 }

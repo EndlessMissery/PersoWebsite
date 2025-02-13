@@ -16,8 +16,16 @@
 @import './ButtonStyles/FooterButtons.css';
 @import './ButtonStyles/ResumeButtons.css';
 @import './ButtonStyles/RightTab.css'; 
+@import './ButtonStyles/CaseStudyButton.css';
 
+/* Mobile */
+@import './Mobile/MobileView.css';
+@import './Mobile/MobileRightHeader.css';
+@import './Mobile/MobileRightContent.css';
 
+/* Lang */
+@import './LanguageSwitcher.css';
 
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import 'flag-icon-css/css/flag-icons.min.css';
 

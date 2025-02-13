@@ -36,12 +36,12 @@ import Logo3 from '../assets/LogoDesigns/Logo_1.png';
 import Logo4 from '../assets/LogoDesigns/Logo_1.png';
 
 // BOOK COVERS IMPORTS
-import Book1 from '../assets/BookCovers/Cover_1.png';
-import Book2 from '../assets/BookCovers/Cover_1_2.png';
-import Book3 from '../assets/BookCovers/Cover_1_3.png';
-import Book4 from '../assets/BookCovers/Cover_1_4.png';
-import Book5 from '../assets/BookCovers/Cover_2.png';
-import Book6 from '../assets/BookCovers/Cover_2_1.png';
+import Book1 from '../assets/BookCovers/Cover_1.webp';
+import Book2 from '../assets/BookCovers/Cover_1_2.webp';
+import Book3 from '../assets/BookCovers/Cover_1_3.webp';
+import Book4 from '../assets/BookCovers/Cover_1_4.webp';
+import Book5 from '../assets/BookCovers/Cover_2.webp';
+import Book6 from '../assets/BookCovers/Cover_2_1.webp';
 
 
 
@@ -86,12 +86,12 @@ const illustrationMap = {
   'src/assets/LogoDesigns/Logo_1.png': Logo4,
 
   // BOOK COVERS MAP
-  'src/assets/BookCovers/Cover_1.png': Book2,
-  'src/assets/BookCovers/Cover_1_2.png': Book1,
-  'src/assets/BookCovers/Cover_1_3.png': Book3,
-  'src/assets/BookCovers/Cover_1_4.png': Book4,
-  'src/assets/BookCovers/Cover_2.png': Book6,
-  'src/assets/BookCovers/Cover_2_1.png': Book5,
+  'src/assets/BookCovers/Cover_1.webp': Book2,
+  'src/assets/BookCovers/Cover_1_2.webp': Book1,
+  'src/assets/BookCovers/Cover_1_3.webp': Book3,
+  'src/assets/BookCovers/Cover_1_4.webp': Book4,
+  'src/assets/BookCovers/Cover_2.webp': Book6,
+  'src/assets/BookCovers/Cover_2_1.webp': Book5,
 };
 
 export default illustrationMap;

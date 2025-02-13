@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { transform } from 'typescript';
+import useTranslationCustom from '../../../hooks/useTranslationCustom';
 
 const ScrollIndicator = () => {
+  const { t } = useTranslationCustom();
   return (
     <motion.div
       className="scroll-tutorial"
@@ -18,7 +19,7 @@ const ScrollIndicator = () => {
         >
           <span role="img" aria-label="scroll">🖱️</span>
         </motion.div>
-        <p>SCROLL TO NAVIGATE</p>
+        <p>{t("scrollIndicator.scrollGuide")}</p>
       </div>
     </motion.div>
   );
