@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaUniversity, FaBriefcase, FaClipboardList } from "react-icons/fa"; 
+import { motion, AnimatePresence } from "framer-motion"; 
 import useTypewriter from "../../../hooks/useTypewriter";
 import "../../../styles/ButtonStyles/ResumeButtons.css";
 import useTranslationCustom from "../../../hooks/useTranslationCustom";
@@ -25,7 +24,6 @@ const ResumeSection = () => {
     delaySpeed: 4000,
     initialDelay: 0
   });
-  
 
   // State for active section and dot navigation
   const [activeSection, setActiveSection] = useState("education");
@@ -44,7 +42,7 @@ const ResumeSection = () => {
   
   // Sample data
   const educationList = [
-    { degree: [t("resumeSection.collegeDegree")], school: "Palacký University", graduation: [t("resumeSection.collegeGraduated")] },
+    { degree: [t("resumeSection.collegeDegree")], school: [t("resumeSection.university")], graduation: [t("resumeSection.collegeGraduated")] },
     { degree: [t("resumeSection.highschoolDegree")], school: "Kosinova Olomouc", graduation: [t("resumeSection.highschoolGraduated")] },
     { degree: [t("resumeSection.vocationalDegree")], school: "Kosinova Olomouc", graduation: [t("resumeSection.vocationalGraduated")] }
   ];
@@ -79,10 +77,12 @@ const ResumeSection = () => {
     {
       category: "Soft Skills",
       skills: [
-        t("resumeSection.communication"),
-        t("resumeSection.teamwork"),
-        t("resumeSection.timeManagement"),
-        t("resumeSection.problemSolving")
+        t("resumeSection.softSkill1"),
+        t("resumeSection.softSkill2"),
+        t("resumeSection.softSkill3"),
+        t("resumeSection.softSkill4"),
+        t("resumeSection.softSkill5"),
+        t("resumeSection.softSkill6"),
       ]
     },
     { category: t("resumeSection.language"),
@@ -116,26 +116,26 @@ const ResumeSection = () => {
           className={`button ${activeSection === "education" ? "active" : ""}`}
           onClick={() => setActiveSection("education")}
         >
-          <FaUniversity /> {t("resumeSection.education")}
+          <i className="fas fa-university"></i> {t("resumeSection.education")}
         </motion.button>
         <motion.button
           className={`button ${activeSection === "experience" ? "active" : ""}`}
           onClick={() => setActiveSection("experience")}
         >
-          <FaBriefcase /> {t("resumeSection.experience")}
+          <i className="fas fa-briefcase"></i> {t("resumeSection.experience")}
         </motion.button>
         <motion.button
           className={`button ${activeSection === "skills" ? "active" : ""}`}
           onClick={() => setActiveSection("skills")}
         >
-          <FaClipboardList /> {t("resumeSection.skill")}
+          <i className="fas fa-clipboard-list"></i> {t("resumeSection.skill")}
         </motion.button>
       </motion.div>
 
       {/* Scrollable Container for Resume Sections */}
       <AnimatePresence mode="wait">
         <div className="scrollable-box">
-          {/* Education Section - No dots, show all at once */}
+          {/* Education Section */}
           {activeSection === "education" && (
             <motion.section 
               className="resume-section"
@@ -147,19 +147,20 @@ const ResumeSection = () => {
               <ul>
                 {educationList.map((education, index) => (
                   <li key={index}>
-                    <strong>{education.degree}</strong> <br />
-                    {education.school} <br />
-                    {education.graduation}  <br />
-                    <p></p>
-                    
+                    <strong className="edu-item">{education.degree}</strong> <br />
+                    <ul className="edu-list">
+                      {education.school} <br />
+                      {education.graduation}  <br />
+                      <p></p>
+
+                    </ul>
                   </li>
                 ))}
               </ul>
-            
             </motion.section>
           )}
 
-          {/* Work Experience Section - Dots navigation */}
+          {/* Work Experience Section */}
           {activeSection === "experience" && (
             <motion.section
               className="resume-section"
@@ -168,11 +169,11 @@ const ResumeSection = () => {
               exit={{ opacity: 0 }} // Fade out when leaving
               transition={fadeTransition}
             >
+              <h3 className="exp-header">{workExperienceList[experienceIndex].title}</h3>
               <ul>
-                <li>
-                  <strong>{workExperienceList[experienceIndex].title}</strong> <br />
+                <li className="exp-item">
                   {workExperienceList[experienceIndex].company} | {workExperienceList[experienceIndex].years} <br />
-                  <ul>
+                  <ul className="responsibilities-list">
                     {workExperienceList[experienceIndex].responsibilities.map((task, idx) => (
                       <li key={idx}>{task}</li>
                     ))}
@@ -182,7 +183,7 @@ const ResumeSection = () => {
             </motion.section>
           )}
 
-          {/* Skills Section - Dots navigation */}
+          {/* Skills Section */}
           {activeSection === "skills" && (
             <motion.section
               className="resume-section"
@@ -191,15 +192,14 @@ const ResumeSection = () => {
               exit={{ opacity: 0 }} // Fade out when leaving
               transition={fadeTransition}
             >
-              <h3>{skillsList[skillsIndex].category}</h3>
-              <ul>
+              <h3 className="exp-header">{skillsList[skillsIndex].category}</h3>
+              <ul className="skill-item">
                 {skillsList[skillsIndex].skills.map((skill, idx) => (
                   <li key={idx}>{skill}</li>
                 ))}
               </ul>
             </motion.section>
           )}
-
 
           {/* Dots for Experience */}
           {activeSection === "experience" && (

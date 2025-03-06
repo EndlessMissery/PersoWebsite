@@ -7,9 +7,9 @@
   position: absolute; /* Ensures dots are positioned at the bottom of the scrollable box */
   bottom: 10px; /* Default for Education dots */
   width: 100%; /* Ensures the dots span the full width of the container */
-  left: -10px; /* Ensure it's aligned from the left */
-  gap: 10px;
-  scale: 0.9;
+  left: -20px; /* Ensure it's aligned from the left */
+  gap: 15px;
+  scale: 1.25;
 }
 
 /* Adjust position for Work Experience Dots */
@@ -39,7 +39,7 @@
 .education-dot.active,
 .experience-dot.active,
 .skills-dot.active {
-  background-color: #3f3f3f;
+  background-color: var(--footer-button-background);
   cursor: default;
 }
 
@@ -47,19 +47,19 @@
 .education-dot:not(.active),
 .experience-dot:not(.active),
 .skills-dot:not(.active) {
-  background-color: rgba(6, 6, 6, 0.25);
+  background-color: var(--footer-button-nonactive);
 }
 
 .education-dot:hover,
 .experience-dot:hover,
 .skills-dot:hover {
-  background-color: #3f3f3f;
+  background-color: var(--footer-button-background);
 }
 
 .education-dot.active:hover,
 .experience-dot.active:hover,
 .skills-dot.active:hover {
-  background-color: #3f3f3f;
+  background-color: var(--footer-button-background);
   cursor: default;
 }
 

@@ -38,26 +38,25 @@
   
   
   .intro {
-      color: rgba(6,6,6,0.25);
       font-size: 24px;
       font-weight: 100;
   }
 
   .intro-about {
-    color: rgba(6,6,6,0.25);
+    color: var(--intro-color);
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 500;
   }
   
   .name-intro {
-      color: #3f3f3f;
+      color: var(--header-text-color);
       font-size: 31px;
       font-weight: 400;
       margin-top: -15px;
   }
 
   .name-intro-about {
-    color: #3f3f3f;
+    color: var(--header-text-color);
     font-size: 31px;
     margin-top: -15px;
     font-weight: 400;
@@ -66,20 +65,18 @@
   hr {
       border: none;
       height: 2px; /* Height of the line */
-      background: linear-gradient(to right, #3f3f3f, transparent);
+      background: var(--hr-color);
       width: 300px;
       margin-top: -20px;
       margin-left: 0px;
     }
   
   .intro-desc {
-      color: #3f3f3f;
-      font-weight: lighter;
+      color: var(--p-color);
+      font-weight: light;
       margin-top: 20px;
       line-height: 25px;
   }   
-
-
 
 
   @media (min-width: 2550px) {

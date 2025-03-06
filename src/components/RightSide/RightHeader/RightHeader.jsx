@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import useTranslationCustom from "../../../hooks/useTranslationCustom";
 
 const RightHeader = ({ rightActiveTab, setrightActiveTab }) => {
-    const { t, language } = useTranslationCustom();
+    const { t } = useTranslationCustom();
   // Map tab keys to display text
   const tabLabels = {
     bookcovers: t("rightHeader.cover"),

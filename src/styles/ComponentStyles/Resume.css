@@ -5,9 +5,11 @@
     overflow-y: hidden; /* Enables vertical scrolling */
     overflow-x: hidden;
     padding: 20px;
+    padding-bottom: 30px;
     margin-top: 20px;
     border-radius: 20px; /* Optional, for rounded corners */
     position: relative; /* Allows absolute positioning for the dots */
+    left: 10px;
   }
   
   /* Add active button color style */
@@ -22,7 +24,39 @@
     margin-top: 0px;
     margin-left: -15px;
   }
+
+  .edu-item {
+    position: relative;
+    top: -5px!important;
+    font-size: 1.3rem;
+  }
+
+  .edu-list {
+    list-style-type: circle;
+    margin-left: 25px;
+    margin-top: -5px !important;
+    font-weight: 400;
+  }
   
+  .exp-header {
+    font-size: 1.3rem;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .exp-item, .skill-item {
+    margin-top: -15px;
+    margin-left: 25px;
+  }
+
+  .skill-item {
+    list-style-type: circle !important;
+    margin-left: 45px;
+    margin-top: -10px !important;
+  }
+
+
+
   .buttons-container button {
     background-color: transparent;
     color: rgba(6, 6, 6, 0.25);
@@ -49,26 +83,34 @@
   .resume-section {
     margin-top: 0px;
     margin-bottom: 20px;
-    color: #3f3f3f;
+    color: var(--p-color);
   }
   
   .resume-section h2 {
-    font-size: 1.2rem;
-    color: #3f3f3f;
+    font-size: 1rem;
+    color: var(--h-color);
     margin-bottom: 10px;
+  }
+
+  .responsibilities-list {
+    margin-left: 25px;
+    list-style-type: circle !important;
+    margin-top: 5px !important;
   }
   
   .resume-section ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 0px;
+    margin-top: 10px;
   }
   
   .resume-section li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
-    font-weight: lighter;
-    color: #3f3f3f;
+    font-weight: light;
+    color: var(--p-color);
     opacity: 0.75;
+    margin-left: 25px;
   }
   
   .resume-section strong {
@@ -78,12 +120,14 @@
   /* RESPONSIVENESS FOR 2K MONITOR (2560px wide) */
   
   /* Adjust button sizes and scrollable box width */
-  @media (min-width: 2560px) {
+  @media (min-width: 2550px) {
     .scrollable-box {
       width: 600px; /* Increase width for larger screen */
       height: 400px; /* Increase height for larger screen */
     }
-  
+    .skills-list {
+      margin-left: 50px;
+    }
     .buttons-container {
       margin-top: 30px;
       margin-left: 0; /* Remove left margin */
@@ -100,7 +144,6 @@
   
     .resume-section li {
       font-size: 1.2rem; /* Increase text size for readability */
-      margin-left: 50px;
     }
   }
   
@@ -129,6 +172,5 @@
   .buttons-container button {
     width: 10%; /* Ensure buttons take full width */
     margin: 0 10px;
-
   }
 }

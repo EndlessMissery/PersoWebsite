@@ -9,11 +9,11 @@ const ContentBox = ({ children }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, delay: 3 }}
     >
-      {/* Text inside the box with a 2-second delay */}
+      {/* Box text animation w/ delay  */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 2.5 }}  // Additional 2-second delay
+        transition={{ duration: 1.5, delay: 2.5 }} 
       >
         {children}
       </motion.div>

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import useTypewriter from "../../../hooks/useTypewriter";
 import useScreenSize from "../../../hooks/useScreenSize";
-import useTranslationCustom from "../../../hooks/useTranslationCustom"; // Importujeme custom hook pro překlady
+import useTranslationCustom from "../../../hooks/useTranslationCustom"; 
 
 const AboutSection = () => {
-  const { t, language } = useTranslationCustom(); // Použití custom hooku
+  const { t, language } = useTranslationCustom(); 
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const isMobile = useScreenSize();
 

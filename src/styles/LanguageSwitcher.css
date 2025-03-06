@@ -1,22 +1,23 @@
 .language-switcher {
   position: absolute;
   top: 94%; /* Adjust positioning */
-  right: 3%;
+  right: 2%;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out;
 }
 
 .language-icon {
   background: transparent;
   border: none;
   font-size: 36px;
-  color: rgba(6,6,6,0.25); /* Default opacity of the globe icon */
+  color: var(--right-tab-button-color);
   padding: 10px;
   cursor: default;
+  scale: 1.1;
   transition: all 0.3s ease-in-out
 }
 
@@ -84,9 +85,11 @@
 }
 
 .flag-icon {
-  left: 5px;
-  top: 20px;
-  width: 100px;
-  height: 30px;
+  position: relative;
+  left: 6px;
+  margin-top: 40px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
+  scale: 1.1;
 }

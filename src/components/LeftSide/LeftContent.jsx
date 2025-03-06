@@ -4,7 +4,6 @@ import ResumeSection from "./MainContent/ResumeSection.jsx";
 import ContactSection from "./MainContent/ContactSection.jsx";
 import TopRightText from "./Header/CornerText/TopRightText.jsx";
 import BottomLeftText from "./Header/CornerText/BottomLeftText.jsx";
-import MobileView from "./MobileView.jsx"; // Create a separate component for mobile version
 
 const Content = ({ activeTab }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -19,9 +18,6 @@ const Content = ({ activeTab }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  if (isMobile) {
-    return <MobileView />; // Render mobile version
-  }
 
   // Tabs object containing JSX for each tab
   const tabs = {

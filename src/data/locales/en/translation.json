@@ -15,6 +15,7 @@
     "experience": "Experiences",
     "skill": "Skills",
     "collegeDegree": "Bachelor in Foreign Relations",
+    "university": "Palacký University Olomouc",
     "collegeGraduated": "Graduated: 2023",
     "highschoolDegree": "High School of Management",
     "highschoolGraduated": "Graduated: 2019",
@@ -31,19 +32,18 @@
     "responsibilitiesWestlogic3": "Desc 3",
     "responsibilitiesWestlogic4": "Desc 4",
     "westlogicPosition": "Graphic Designer",
-    "communication": "Communication",
-    "teamwork": "Teamwork",
-    "timeManagement": "Time Management",
-    "problemSolving": "Problem Solving",
+    "softSkill1": "Critical Thinking & Problem-Solving",
+    "softSkill2": "User-Centric Mindset",
+    "softSkill3": "Adaptability & Flexibility",
+    "softSkill4": "Time Management & Productivity",
+    "softSkill5": "Innovative Thinking",
+    "softSkill6": "Creativity",
     "language": "Languages",
     "czech": "Czech",
     "english": "English"
   },
   "contactSection": {
-    "contact": "Contact me",
-    "name": "Name and Surname",
-    "email": "E-mail",
-    "message": "Message"
+    "contact": "Contact Me"
   },
   "scrollIndicator": {
     "scrollGuide": "SCROLL TO NAVIGATE"
@@ -67,7 +67,7 @@
     "category4": "Cover 4"
   },
   "appdesign": {
-    "category1": "Application 1",
+    "category1": "Travel.io",
     "category2": "Application 2",
     "category3": "Application 3",
     "category4": "Application 4"

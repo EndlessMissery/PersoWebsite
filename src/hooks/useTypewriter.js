@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const useTypewriter = ({
@@ -7,35 +7,30 @@ const useTypewriter = ({
   cursor = false,
   typeSpeed = 70,
   deleteSpeed = 50,
-  delaySpeed = 2000, // Delay after each word (existing behavior)
-  initialDelay = 2000, // Custom delay before typing starts
+  delaySpeed = 2000,
+  initialDelay = 2000,
   cursorStyle = "_",
   onTypingEnd,
 }) => {
-  const [showTypewriter, setShowTypewriter] = useState(false);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowTypewriter(true);
-    }, initialDelay); // Apply initial delay before showing the typewriter
-
+    const timer = setTimeout(() => setIsReady(true), initialDelay);
     return () => clearTimeout(timer);
   }, [initialDelay]);
 
-  return (
-    showTypewriter && (
-      <Typewriter
-        words={words}
-        loop={loop}
-        cursor={cursor}
-        typeSpeed={typeSpeed}
-        deleteSpeed={deleteSpeed}
-        delaySpeed={delaySpeed}
-        cursorStyle={cursorStyle}
-        onLoopDone={onTypingEnd}
-      />
-    )
-  );
+  return isReady ? (
+    <Typewriter
+      words={words}
+      loop={loop}
+      cursor={cursor}
+      typeSpeed={typeSpeed}
+      deleteSpeed={deleteSpeed}
+      delaySpeed={delaySpeed}
+      cursorStyle={cursorStyle}
+      onLoopDone={onTypingEnd}
+    />
+  ) : null;
 };
 
 export default useTypewriter;

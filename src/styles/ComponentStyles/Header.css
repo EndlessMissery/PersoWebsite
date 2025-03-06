@@ -1,27 +1,23 @@
 header {
     position: absolute;
-    top: 0px;
-    left: 10px;
+    top: -50px;
+    left: -50px;
   }
 
   .logo {
-    width: 150px;
-    height: 210px;
-    opacity: .95;
+    width: 75%;
+    height: 75%;
+    transform: scale(.35);
   }
 
   @media (min-width: 2550px) {
     .logo {
-      width: 170px;
-      height: 230px;
+      width: 100%;
+      height: 100%;
     }
   }
 
   @media screen and (min-width: 3150px) {
-    .logo {
-      width: 340px;
-      height: 460px;
-    }
   }
 
 
@@ -29,5 +25,25 @@ header {
 @media (max-width: 768px) {
   .logo {
     display: none;
+  }
+}
+
+@media (min-width: 2550px) {
+  @supports (-webkit-backdrop-filter: none) {
+    .logo {
+      position: relative;
+      scale: .6;
+      top: -80px;
+      left: -100px;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .logo {
+    transform: scale(.85);
+    height: 100px;
+    margin-top: 70px;
+    margin-left: 55px;
   }
 }

@@ -2,15 +2,14 @@
   /* Specifically target the case-study button, ensuring no inheritance from category buttons */
 .category-buttons .case-study-button-container .case-study-button {
     z-index: 1000000000000;
-    background-color: #4983c0;
-    opacity: .5;
+    background-color: var(--case-button);
     color: white;
     padding: 10px 20px;
     width: 150px;
-    left: 869px;
-    top: 265px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    left: 859px;
+    top: 252px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: 50px;
     border: none;
     cursor: pointer;
@@ -27,14 +26,13 @@
 
   .case-study-button {
     z-index: 100000;
-    box-shadow: inset 2px 2px 10px rgba(6,6,6,.25);
+    box-shadow: var(--box-shadow);
   }
   
   /* Hover effect for the case study button */
   .category-buttons .case-study-button-container .case-study-button:hover {
-    background-color: #4983c0;
+    background-color: var(--case-button-hover);
     text-align: center;
-    opacity: 1;
     transition: 0.3s ease-in-out;
     z-index: 1000000;
   }
@@ -44,7 +42,7 @@
       z-index: 1000000000000;
       position: relative;
       left: 77%;
-      top: 75px;
+      top: 97px;
     }
   
     .case-study-button {

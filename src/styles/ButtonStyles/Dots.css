@@ -1,52 +1,47 @@
+/* Dot indicator wrapper */
 .dot-indicator-wrapper {
-    position: absolute;
-    top: 60px;  /* Adjust the space above the dots */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;  /* Ensure it's above the content */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    pointer-events: none;  /* Prevent the dots from blocking any other interactions */
-  }
-  
-  .dot-indicator {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    position: absolute;
-    top: 25px; /* Place the dots at the top of the content box */
-    left: 50%;
-    gap: 10px;
-    z-index: 10000;
-    transform: translateX(-50%);
-    background-color: rgba(6, 6, 6, 0.35);
-    border-radius: 25px;
-    padding: 7.5px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    z-index: 10000;
+  position: absolute;
+  top: 60px;  /* Adjust the space above the dots */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;  /* Ensure it's above the content */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;  /* Prevent the dots from blocking any other interactions */
+}
 
+/* Dot indicator container */
+.dot-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 25px; /* Place the dots at the top of the content box */
+  left: 50%;
+  gap: 10px;
+  transform: translateX(-50%);
+  background-color: var(--case-button);
+  border-radius: 25px;
+  padding: 7.5px 15px;  /* Combined padding for left and right */
+}
 
-  }
-  
-  .dot.active {
-    background-color: rgba(225, 230,230, 1);
+/* Dot styling */
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(225, 230, 230, 0.25); /* Default background */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
 
-  }
+/* Active dot */
+.dot.active {
+  background-color: rgba(225, 230, 230, 1); /* Active dot color */
+}
 
-  .dot:not(.active) {
-    background-color: rgba(225, 230,230, .25);
-  }
-  
-  motion.p,
-  motion.div {
-    transition: opacity 1.2s ease;  /* Apply same fade-in/out effect to text and images */
-  }
-  
+/* Motion transition for text and images */
+motion.p,
+motion.div {
+  transition: opacity 1.2s ease;
+}

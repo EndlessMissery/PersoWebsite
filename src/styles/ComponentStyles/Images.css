@@ -5,13 +5,13 @@
     position: relative;
     height: 100%;
     width: 750px;
-    zoom: 105%;
+    zoom: 100%;
     
   }
   
   @media (min-width: 2550px) {
     .slide-image {
-      zoom: 125%;
+      zoom: 121%;
     }
   }
 
@@ -20,3 +20,4 @@
       zoom: 225%;
     }
   }
+

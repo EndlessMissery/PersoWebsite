@@ -4,7 +4,7 @@
       {
         "name": "appdesign.category1",
         "images": [
-          "src/assets/AppDesigns/App_1.png",
+          "src/assets/AppDesigns/App_1_1.webp",
           "src/assets/AppDesigns/App_1.png",
           "src/assets/AppDesigns/App_1.png",
           "src/assets/AppDesigns/App_1.png"
@@ -169,11 +169,11 @@
       {
         "name": "mixart.category1",
         "images": [
-          "src/assets/Illustrations/Artwork/Artwork_1.jpg",
-          "src/assets/Illustrations/Artwork/Artwork_2.jpg",
-          "src/assets/Illustrations/Artwork/Artwork_3.jpg",
-          "src/assets/Illustrations/Artwork/Artwork_4.jpg",
-          "src/assets/Illustrations/Artwork/Artwork_5.jpg"
+          "src/assets/Illustrations/Artwork/Artwork_1.webp",
+          "src/assets/Illustrations/Artwork/Artwork_2.webp",
+          "src/assets/Illustrations/Artwork/Artwork_3.webp",
+          "src/assets/Illustrations/Artwork/Artwork_4.webp",
+          "src/assets/Illustrations/Artwork/Artwork_5.webp"
         ]
       },
       {

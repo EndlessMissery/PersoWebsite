@@ -11,8 +11,6 @@ const RightSide = () => {
     <div className="right-side">
       <RightHeader setrightActiveTab={setRightActiveTab} rightActiveTab={rightActiveTab} />
       <RightContent rightActiveTab={rightActiveTab} />
-      
-      {/* Add Box Component */}
       <Box />
     </div>
   );

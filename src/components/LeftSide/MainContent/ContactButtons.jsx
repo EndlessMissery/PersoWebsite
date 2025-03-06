@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import useScreenSize from "../../../hooks/useScreenSize"; // Add the screen size hook
 
 const ContactButtons = () => {
   return (
@@ -11,7 +10,7 @@ const ContactButtons = () => {
       transition={{ duration: 1.5, delay: 0.5 }}
     >
       <button
-        className="email-button" 
+        className="email-button"
         onClick={() => (window.location.href = "mailto:romankalita010@gmail.com")}
       >
         <i className="fas fa-envelope"></i>

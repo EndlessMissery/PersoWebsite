@@ -11,9 +11,8 @@
   overflow: hidden;
   position: absolute;
   z-index: -100000;
-  backdrop-filter: blur(4px); /* Apply blur to background */
-  -webkit-backdrop-filter: blur(4px); /* Ensure compatibility with Safari */
-  background-image: url('../../assets/Box_Background.png');
+  backdrop-filter: blur(4); /* Apply blur to background */
+  -webkit-backdrop-filter: blur(4); /* Ensure compatibility with Safari */
 
 }
 

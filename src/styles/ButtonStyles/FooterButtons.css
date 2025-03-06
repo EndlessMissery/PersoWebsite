@@ -1,3 +1,4 @@
+/* Footer container */
 footer {
   position: fixed;
   bottom: 100px;
@@ -18,13 +19,13 @@ footer {
   left: 0;
   width: 150px; /* Match the width of the buttons */
   height: 50px; /* Match the height of the buttons */
-  background-color: #3f3f3f;
+  background-color: var(--footer-button-background);
   border-radius: 20px;
-  transition: transform 0.3s ease-out; /* Smooth transition */
+  transition: transform 0.3s ease-out;
   z-index: -1; /* Behind the buttons */
 }
 
-/* Scoped Button Styles for Footer */
+/* Button styles for footer */
 footer button {
   top: 10px;
   width: 150px;
@@ -34,107 +35,93 @@ footer button {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #3f3f3f;
-  transition: all 0.3s ease-out; /* Uniform animation speed */
+  transition: all 0.3s ease-out;
   position: relative;
   scale: 1.2;
-}
-
-/* Inactive button state */
-footer button:not(.active) {
+  font-weight: 500;
   border-radius: 20px;
-  color: rgba(6, 6, 6, 0.25);
-  transition: all 0.3s ease; /* Uniform animation speed */
+  color: var(--footer-button-nonactive);
 }
 
-/* Hover state for inactive buttons */
+/* Hover and active states for buttons */
+footer button:hover:not(.active),
 footer button:not(.active):hover {
   background-color: transparent;
-  color: #3f3f3f;
-  transition: all 0.3s ease; /* Uniform animation speed */
+  color: var(--footer-button-hover);
 }
 
-/* Active button state */
 footer button.active {
-  color: rgb(225, 230, 230);
   cursor: default;
+  color: var(--footer-button-active);
 }
 
-/* Scoped Tab Button */
+/* Tab button styles */
 footer .tab {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: transparent;
-  color: #3f3f3f;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease; /* Uniform animation speed */
+  transition: all 0.3s ease;
 }
 
 footer .tab:hover {
   background-color: transparent;
-  filter: drop-shadow(0 0 10px rgba(6, 6, 6, 0.25));
 }
 
 footer .tab.active {
-  color: rgb(225, 230, 230);
-  background-color: transparent;
+  color: var(--footer-button-active);
 }
 
-/* Resize the image for different screen sizes */
+/* Media Queries for large screens */
 @media (min-width: 2550px) {
   footer {
-      left: 230px;
+    left: 230px; /* Adjust position on large screens */
   }
 }
 
-
-
-
-
+/* Media Queries for small screens */
 @media (max-width: 768px) {
   footer .tab:hover {
-    display: none;
+    display: none; /* Hide tab hover on smaller screens */
   }
 
   .footer-tabs {
     position: absolute;
     top: 75px;
-    flex-direction: row; /* Zarovná tlačítka vedle sebe */
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     display: none;
   }
 
   footer button {
-    width: auto; /* Přizpůsobí šířku ikonám */
-    height: 50px;
-    padding: 10px;
+    width: auto; /* Adjust button size for icons */
   }
 
   .text {
-    display: none; /* Skryje text na mobilní verzi */
+    display: none; /* Hide text on mobile */
   }
 
   .icon {
-    font-size: 24px; /* Zvětší ikony pro lepší čitelnost */
-    color: #b0b0b0; /* Výchozí šedá barva pro neaktivní ikony */
-    transition: color 0.3s ease; /* Hladký přechod při změně barvy */
+    font-size: 24px;
+    color: #b0b0b0;
+    transition: color 0.3s ease;
   }
 
   .icon:hover {
-    color: rgb(225, 230, 230); /* Tmavá barva pro aktivní ikonu */
+    color: rgb(225, 230, 230); /* Darker color for active icon */
   }
 
   .footer-slider {
-    display: none;
+    display: none; /* Hide slider on mobile */
   }
 }
 
-/* Skryje ikony pro desktop verzi */
+/* Hide icons on desktop version */
 @media (min-width: 769px) {
   .icon {
-    display: none; /* Skryje ikony na desktopu */
+    display: none; /* Hide icons on desktop */
   }
 }

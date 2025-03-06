@@ -1,75 +1,45 @@
+/* Button container */
 .button-container-contact {
-  display: flex; /* Align buttons in a row */
-  justify-content: space-between; /* Distribute buttons evenly across the container */
+  display: flex;
+  justify-content: space-between;
   margin-top: 35px;
   padding-top: 25px;
-  height: 50px;
   padding-bottom: 15px;
-  }
+  height: 50px;
+}
 
-  
+/* Common button styling */
 .email-button, .whatsapp-button, .facebook-button, .linkedin-button {
-  padding: 15px 50px; /* Padding */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Font size */
-  text-decoration: none; /* Remove underline */
+  padding: 15px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Default font size */
+  text-decoration: none;
   background-color: transparent;
   transition: all 0.25s ease-out;
-  font-size: 18px;
 }
 
-.email-button i, .email-button {
-  color: rgba(6, 6, 6, 0.25);
-  scale: 1.5;
+/* Icon styling */
+.email-button i, .whatsapp-button i, .facebook-button i, .linkedin-button i {
+  color: var(--footer-button-nonactive);
+  scale: 2.75;
   transition: all 0.25s ease-out;
 }
 
-.whatsapp-button i, .whatsapp-button {
-  color: rgba(6, 6, 6, 0.25);
-  scale: 1.5;
-  transition: all 0.25s ease-out;
+/* Hover effect for buttons and icons */
+.email-button:hover, .whatsapp-button:hover, .facebook-button:hover, .linkedin-button:hover,
+.email-button:hover i, .whatsapp-button:hover i, .facebook-button:hover i, .linkedin-button:hover i {
+  color: var(--footer-button-background);
 }
 
-.facebook-button i, .facebook-button {
-  color: rgba(6, 6, 6, 0.25);
-  scale: 1.5;
-  transition: all 0.25s ease-out;
-}
-
-.linkedin-button i, .linkedin-button {
-  color: rgba(6, 6, 6, 0.25);
-  scale: 1.5;
-  transition: all 0.25s ease-out;
-}
-
-.email-button:hover, .email-button:hover i {
-  color: #3f3f3f;
-}
-
-.whatsapp-button:hover, .whatsapp-button:hover i {
-  color: #1EBE53;
-}
-
-.facebook-button:hover, .facebook-button:hover i {
-  color: #365899;
-}
-
-.linkedin-button:hover, .linkedin-button:hover i {
-  color: #0e76a8;
-}
-
+/* Media query for larger screens */
 @media (min-width: 2550px) {
   .button-container-contact {
     margin-top: 65px;
-    height: 50px;
-    }
+  }
 
-    .email-button, .whatsapp-button, .facebook-button, .linkedin-button {
-      padding: 13px 60px; /* Increase padding for larger screens */
-      font-size: 1.4rem; /* Increase font size */
-    }
-
+  .email-button, .whatsapp-button, .facebook-button, .linkedin-button {
+    padding: 13px 60px; /* Consistent padding for larger screens */
+  }
 }
-

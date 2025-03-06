@@ -10,7 +10,7 @@ const TopRightText = () => {
       className="corner top-right typewriter-text"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay:1.5 }}
+      transition={{ duration: 1.5, delay: 1.5 }}
     >
       {topRightText}
     </motion.div>

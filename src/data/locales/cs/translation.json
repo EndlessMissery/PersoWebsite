@@ -15,6 +15,7 @@
     "experience": "Zkušenosti",
     "skill": "Schopnosti",
     "collegeDegree": "Bakalář v oboru Mezinárodních studií",
+    "university": "Univerzita Palackého v Olomouci",
     "collegeGraduated": "Dokončeno: 2023",
     "highschoolDegree": "Střední škola obchodní v oboru Management a podnikání",
     "highschoolGraduated": "Dokončeno: 2019",
@@ -31,20 +32,20 @@
     "responsibilitiesWestlogic3": "Popis 3",
     "responsibilitiesWestlogic4": "Popis 4",
     "westlogicPosition": "Grafický designér",
-    "communication": "Komunikace",
-    "teamwork": "Teamwork",
-    "timeManagement": "Time Management",
-    "problemSolving": "Řešení problémů",
+    "softSkill1": "Kritické myšlení & řešení problémů",
+    "softSkill2": "Uživatelské myšlení",
+    "softSkill3": "Adaptabilita & flexibilita",
+    "softSkill4": "Time management & produktivita",
+    "softSkill5": "Inovativní myšlení",
+    "softSkill6": "Kreativita",
     "language": "Jazyky",
     "czech": "Čeština",
     "english": "Angličtina"
   },
   "contactSection": {
-    "contact": "Kontaktuj mě",
-    "name": "Jméno a přijmení",
-    "email": "E-mail",
-    "message": "Zpráva"
+    "contact": "Kontakt"
   },
+  
   "scrollIndicator": {
     "scrollGuide": "KOLEČKO MYŠI K NAVIGACI"
   },
@@ -68,7 +69,7 @@
     "category4": "Obálka 4"
   },
   "appdesign": {
-    "category1": "Aplikace 1",
+    "category1": "Travel.io",
     "category2": "Aplikace 2",
     "category3": "Aplikace 3",
     "category4": "Aplikace 4"

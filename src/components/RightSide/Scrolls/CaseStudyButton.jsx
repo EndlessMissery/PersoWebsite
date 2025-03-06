@@ -1,12 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import '../../../styles/main.css'
 
 const CaseStudyButton = ({ categoryName, rightActiveTab }) => {
   const { t } = useTranslation();
 
   const openPDF = (categoryName) => {
     const pdfMap = {
-      "appdesign.category1": "https://Google.com/",
+      "appdesign.category1": "/pdf1.pdf",
       "appdesign.category2": "https://Yahoo.com/",
       "appdesign.category3": "path/to/appdesign_case_study_3.pdf",
       "appdesign.category4": "path/to/appdesign_case_study_4.pdf",

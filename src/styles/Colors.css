@@ -1,0 +1,38 @@
+:root {
+    /* Background & Text */
+    --background-color: #d8a47f36; /* Jemná krémová bílá */
+    --h-color: #14213D; /* Sytá tmavě šedá pro ostrý kontrast */
+    --p-color: #14213D; /* Měkká neutrální šedá pro text */
+    --hr-color: linear-gradient(to right, #D8A47F, transparent);
+    --box-shadow: 0px 4px 15px #14213d43;
+
+    /* CASE STUDY BUTTON */
+    --case-button: #d8a47f9e;
+    --case-button-hover: #D8A47F;
+
+    /* CATEGORY BUTTONS */
+    --category-button-nonactive: #d8a47f9e; /* Pastelová zelená */
+    --category-button-hover: #D8A47F;
+    --category-button-active: #D8A47F;
+
+    /* LEFT TAB BUTTONS */
+    --footer-button-background: #14213D; /* Jemná meruňková */
+    --footer-button-hover: #14213D;
+    --footer-button-active: #eaeaea;
+    --footer-button-nonactive: #14213d60;
+
+    /* RESUME BUTTONS */
+    --background-resume-color: #14213d00;
+    --resume-buttons-container-color: #14213D;
+    --resume-buttons-container-nonactive: #14213d60;
+
+    /* RIGHT TAB BUTTON */
+    --right-tab-button-color: #D8A47F; /* Modrozelená */
+    --right-tab-button-hover: #D8A47F;
+    --right-tab-button-nonactive: #d8a47f9e;
+    --right-tab-button-active: #eaeaea;
+
+    /* ABOUT ME TEXT */
+    --header-text-color: #14213D;
+    --intro-color: #D8A47F;
+}

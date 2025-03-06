@@ -1,9 +1,9 @@
 // ILLUSTRATIONS IMPORTS (existing ones)
-import Artwork1 from '../assets/Illustrations/Artwork/Artwork_1.jpg';
-import Artwork2 from '../assets/Illustrations/Artwork/Artwork_2.jpg';
-import Artwork3 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
-import Artwork4 from '../assets/Illustrations/Artwork/Artwork_4.jpg';
-import Artwork5 from '../assets/Illustrations/Artwork/Artwork_5.jpg';
+import Artwork1 from '../assets/Illustrations/Artwork/Artwork_1.webp';
+import Artwork2 from '../assets/Illustrations/Artwork/Artwork_2.webp';
+import Artwork3 from '../assets/Illustrations/Artwork/Artwork_3.webp';
+import Artwork4 from '../assets/Illustrations/Artwork/Artwork_4.webp';
+import Artwork5 from '../assets/Illustrations/Artwork/Artwork_5.webp';
 import ArtworkComicStyle1 from '../assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg';
 import ArtworkComicStyle2 from '../assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg';
 import ArtworkMangaStyle1 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg';
@@ -17,10 +17,10 @@ import LogoRecreation2 from '../assets/Illustrations/LogoRecreation/LogoRecreati
 import LogoRecreation3 from '../assets/Illustrations/LogoRecreation/LogoRecreation_3.png';
 
 // APP DESIGN IMPORTS
-import App1 from '../assets/AppDesigns/App_1.png';
-import App2 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
-import App3 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
-import App4 from '../assets/Illustrations/Artwork/Artwork_3.jpg';
+import App1 from '../assets/AppDesigns/App_1_1.webp';
+import App2 from '../assets/AppDesigns/App_1_1.webp';
+import App3 from '../assets/AppDesigns/App_1_1.webp';
+import App4 from '../assets/AppDesigns/App_1_1.webp';
 
 // WEB DESIGN IMPORTS
 import Web1 from '../assets/WebDesigns/Web_1.png';
@@ -49,11 +49,11 @@ import Book6 from '../assets/BookCovers/Cover_2_1.webp';
 // ILLUSTRATION MAP
 const illustrationMap = {
   // Existing Illustration mappings
-  'src/assets/Illustrations/Artwork/Artwork_1.jpg': Artwork1,
-  'src/assets/Illustrations/Artwork/Artwork_2.jpg': Artwork2,
-  'src/assets/Illustrations/Artwork/Artwork_3.jpg': Artwork3,
-  'src/assets/Illustrations/Artwork/Artwork_4.jpg': Artwork4,
-  'src/assets/Illustrations/Artwork/Artwork_5.jpg': Artwork5,
+  'src/assets/Illustrations/Artwork/Artwork_1.webp': Artwork1,
+  'src/assets/Illustrations/Artwork/Artwork_2.webp': Artwork2,
+  'src/assets/Illustrations/Artwork/Artwork_3.webp': Artwork3,
+  'src/assets/Illustrations/Artwork/Artwork_4.webp': Artwork4,
+  'src/assets/Illustrations/Artwork/Artwork_5.webp': Artwork5,
   'src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg': ArtworkComicStyle1,
   'src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg': ArtworkComicStyle2,
   'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg': ArtworkMangaStyle1,
@@ -67,7 +67,7 @@ const illustrationMap = {
   'src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png': LogoRecreation3,
 
   // APP DESIGN MAP
-  'src/assets/AppDesigns/App_1.png': App1,
+  'src/assets/AppDesigns/App_1_1.webp': App1,
   'src/assets/Illustrations/Artwork/Artwork_3.jpg': App2,
   'src/assets/Illustrations/Artwork/Artwork_3.jpg': App3,
   'src/assets/Illustrations/Artwork/Artwork_3.jpg': App4,
@@ -86,8 +86,8 @@ const illustrationMap = {
   'src/assets/LogoDesigns/Logo_1.png': Logo4,
 
   // BOOK COVERS MAP
-  'src/assets/BookCovers/Cover_1.webp': Book2,
-  'src/assets/BookCovers/Cover_1_2.webp': Book1,
+  'src/assets/BookCovers/Cover_1.webp': Book1,
+  'src/assets/BookCovers/Cover_1_2.webp': Book2,
   'src/assets/BookCovers/Cover_1_3.webp': Book3,
   'src/assets/BookCovers/Cover_1_4.webp': Book4,
   'src/assets/BookCovers/Cover_2.webp': Book6,

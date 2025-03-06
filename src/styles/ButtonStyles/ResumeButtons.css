@@ -1,6 +1,6 @@
  /* Add active button color style */
  .buttons-container button.active {
-    color: #3f3f3f;
+    color: var(--resume-buttons-container-color);
   }
   
   /* Button Styles */
@@ -11,14 +11,13 @@
     padding-top: 25px;
     padding-bottom: 15px;
     margin-left: -15px;
-    background-color: rgba(6, 6, 6, 0.035);
-    backdrop-filter: blur(2px);
+    background-color: var(--background-resume-color);
     border-radius: 25px;
   }
   
   .buttons-container button {
     background-color: transparent;
-    color: rgba(6, 6, 6, 0.25);
+    color: var(--resume-buttons-container-nonactive);
     padding: 0px 40px 0px; /* Adjust padding for more space */
     border: none;
     border-radius: 5px;
@@ -37,17 +36,17 @@
   }
   
   .buttons-container button:hover {
-    color: #3f3f3f;
+    color: var(--resume-buttons-container-color);
     cursor: pointer;
   }
   
   .buttons-container button.active:hover {
-    color: #3f3f3f; /* Keep the hover effect when active */
+    color: var(--resume-buttons-container-color); /* Keep the hover effect when active */
     cursor: default;
   }
 
     /* Adjust button sizes and scrollable box width */
-    @media (min-width: 2560px) {
+    @media (min-width: 2550px) {
         .buttons-container {
           margin-top: 30px;
           margin-left: 0; /* Remove left margin */

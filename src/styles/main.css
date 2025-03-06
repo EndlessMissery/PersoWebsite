@@ -1,9 +1,9 @@
 /* Component Styles */
+@import '/src/App.css';
 @import './ComponentStyles/CornerText.css';
 @import './ComponentStyles/Header.css';
 @import './ComponentStyles/Images.css';
 @import './ComponentStyles/Intro.css';
-@import './ComponentStyles/LanguageSelector.css';
 @import './ComponentStyles/Resume.css';
 @import './ComponentStyles/RightContent.css';
 @import './ComponentStyles/Box.css';
@@ -26,6 +26,6 @@
 /* Lang */
 @import './LanguageSwitcher.css';
 
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import 'flag-icon-css/css/flag-icons.min.css';
+@import './Colors.css';
+
 
