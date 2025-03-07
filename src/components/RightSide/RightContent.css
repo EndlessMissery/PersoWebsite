@@ -1,0 +1,83 @@
+.right-content {
+    margin-top: 70px;
+    width: 750px;
+    margin-left: 24px;
+    position: relative; 
+    opacity: .9;
+    background-color: transparent;
+    z-index: -10000;
+  }
+
+.right-content-box {
+  margin-top: 20px;
+  width: 100%;
+  height: 750px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px #14213d43;
+  overflow: hidden;
+  border: solid 4px #d8a47f42;
+  z-index: -10000;
+}
+
+.scroll-tutorial {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 1;
+  z-index: 4;
+  width: 200px;
+  font-size: 40px;
+  background-color: var(--right-button-nonactive);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+}
+
+.scroll-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--button-text-active);
+  font-family: "Segoe UI", "Apple Color Emoji", "Noto Color Emoji", "Android Emoji", "Emoji", sans-serif;
+  cursor: default;
+  
+}
+
+.scroll-icon p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  opacity: 1;
+}    
+
+  @media screen and (min-width: 2550px) {
+    .right-content {
+      width: 900px;
+      margin-left: 550px;
+      margin-top: 175px;
+    }
+  
+    .right-content-box {
+      height: 900px;
+      width: 100%;
+    }
+  }
+
+
+  @media screen and (min-width: 3150px) {
+    .right-content {
+      width: 1500px;
+      margin-left: -105px;
+    }
+  
+    .right-content-box {
+      height: 1500px;
+      width: 100%;
+    }
+  }

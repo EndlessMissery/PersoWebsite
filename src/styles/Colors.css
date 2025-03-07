@@ -1,0 +1,19 @@
+:root {
+    /* GLOBAL */
+    --background-color: #d8a47f36;
+    --h-color: #14213D;
+    --p-color: #14213D;
+    --button-text-active: #eaeaea;
+    --hr-color: linear-gradient(to right, var(--right-button), transparent);
+    --box-shadow: 0px 4px 15px #14213D60;
+    
+    /* LEFT SIDE */
+    --left-button: #14213D;
+    --left-button-hover: #14213D;
+    --left-button-nonactive: #14213D60;
+
+    /* RIGHT SIDE */
+    --right-button: #D8A47F;
+    --right-button-hover: #D8A47F;
+    --right-button-nonactive: #D8A47F9E;
+}

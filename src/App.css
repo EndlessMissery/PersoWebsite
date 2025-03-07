@@ -1,0 +1,96 @@
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  z-index: -9999;
+  overflow: hidden;
+}
+
+* {
+  font-family: 'Smooch sans', sans-serif;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+button {
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+  height: 2px; /* Height of the line */
+  background: var(--hr-color);
+  width: 300px;
+  margin-top: -20px;
+  margin-left: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, ul {
+  cursor: default;
+  user-select: none;
+}
+
+.background-video-container {
+  opacity: .75;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Zajistí, že video bude za ostatními elementy */
+  overflow: hidden;
+}
+
+#background-video {
+  opacity: .75;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ujistí se, že video bude správně vyplňovat celé pozadí */
+  transform: translate(-50%, -50%);
+}
+  
+button {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--h-color);
+}
+
+h2 {
+    color: var(--h-color);
+}
+
+  @media (forced-colors: active) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 1911px) {
+    body {
+      overflow: hidden;
+      touch-action: none;
+    }
+    .resume-section, .buttons-container, .content, .language-switcher, .logo, .category-buttons, .right-side{
+      display: none;
+    }
+    .mobilenotsupp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;  
+    }
+  }

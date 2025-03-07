@@ -1,0 +1,92 @@
+.language-switcher {
+  position: absolute;
+  top: 94%;
+  right: 2%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.language-icon {
+  background: transparent;
+  border: none;
+  font-size: 36px;
+  color: var(--right-button);
+  padding: 10px;
+  cursor: default;
+  scale: 1.1;
+  transition: all 0.3s ease-in-out
+}
+
+.language-icon.active {
+  cursor: default;
+  transition: all 0.3s ease-in-out;
+}
+
+.language-icon:hover {
+  cursor: pointer;
+}
+
+.language-options {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.language-options.open {
+  opacity: 1;
+  pointer-events: auto; 
+  transform: translateY(-10px); 
+}
+
+.language-options button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1.5;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.language-options button:hover {
+  transform: scale(1.2);
+}
+
+.language-options button.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.language-options button:not(.active) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.language-options button:focus {
+  outline: none;
+  cursor: default;
+}
+
+.flag-icon {
+  position: relative;
+  left: 6px;
+  margin-top: 50px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  scale: 1.1;
+}
