@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header/Header";
 import Content from "./LeftContent";
-import Footer from "./Footer/Footer";
+import Footer from "./LeftTab/LeftTab";
 import "../../styles/main.css";
 
 const LeftSide = ({ activeTab, setActiveTab }) => {  

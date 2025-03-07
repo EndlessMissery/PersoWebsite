@@ -10,35 +10,35 @@ const AboutSection = () => {
   const isMobile = useScreenSize();
 
   useEffect(() => {
-    // Set isFirstLoad to false after the component is mounted
+    // Set isFirstLoad to false after the component is loaded
     const timer = setTimeout(() => setIsFirstLoad(false), 0);
     return () => clearTimeout(timer);
   }, []);
 
-  const aboutIntro = useTypewriter({
-    words: [t("aboutSection.intro")],
-    typeSpeed: 70,
-    delaySpeed: 4000,
-    initialDelay: isFirstLoad ? 2500 : 0,
-  });
+    const aboutIntro = useTypewriter({
+      words: [t("aboutSection.intro")],
+      typeSpeed: 70,
+      delaySpeed: 4000,
+      initialDelay: isFirstLoad ? 2500 : 0,
+    });
 
-  const aboutName = useTypewriter({
-    words: [t("aboutSection.name")],
-    cursor: true,
-    cursorStyle: "|",
-    typeSpeed: 70,
-    delaySpeed: 4000,
-    initialDelay: isFirstLoad ? 3000 : 0,
-  });
+    const aboutName = useTypewriter({
+      words: [t("aboutSection.name")],
+      cursor: true,
+      cursorStyle: "|",
+      typeSpeed: 70,
+      delaySpeed: 4000,
+      initialDelay: isFirstLoad ? 3000 : 0,
+    });
 
-  const aboutDesc = useTypewriter({
-    words: [t("aboutSection.description")],
-    cursor: false,
-    cursorStyle: "|",
-    typeSpeed: 35,
-    delaySpeed: 4000,
-    initialDelay: isFirstLoad ? 4000 : 0,
-  });
+    const aboutDesc = useTypewriter({
+      words: [t("aboutSection.description")],
+      cursor: false,
+      cursorStyle: "|",
+      typeSpeed: 35,
+      delaySpeed: 4000,
+      initialDelay: isFirstLoad ? 4000 : 0,
+    });
 
 return (
   <motion.div key={language} className="content-box-about">
@@ -47,8 +47,7 @@ return (
     <motion.hr
       initial={{ width: "0%" }}
       animate={{ width: "100%" }}
-      transition={{ duration: 1.5, delay: isFirstLoad ? 0.1 : 1 }}
-    />
+      transition={{ duration: 1.5, delay: isFirstLoad ? 0.1 : 1 }}/>
     <p className="intro-desc">{!isMobile ? aboutDesc : t("aboutSection.description")}</p>
   </motion.div>
 );

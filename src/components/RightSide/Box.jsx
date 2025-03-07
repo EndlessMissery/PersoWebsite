@@ -8,15 +8,11 @@ const Box = () => {
       className="custom-box"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 3 }}
-    >
-      {/* Add additional animations or content inside the box */}
+      transition={{ duration: 1.5, delay: 3 }}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 3 }} // Additional 2-second delay
-      >
-        {/* Content can go here if needed */}
+        transition={{ duration: 1.5, delay: 3 }}>
       </motion.div>
     </motion.div>
   );

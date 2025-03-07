@@ -1,0 +1,23 @@
+.slide-image {
+    border-radius: 20px;
+    overflow-y: hidden;
+    position: relative;
+    height: 100%;
+    width: 750px;
+    zoom: 100%;
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
+  
+  @media (min-width: 2550px) {
+    .slide-image {
+      zoom: 121%;
+    }
+  }
+
+  @media screen and (min-width: 3150px) {
+    .slide-image {
+      zoom: 225%;
+    }
+  }
+

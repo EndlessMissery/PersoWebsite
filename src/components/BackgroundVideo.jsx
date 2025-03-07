@@ -1,5 +1,5 @@
 import React from "react";
-import videoSrc from "../assets/video.webm"; // Importujte video soubor
+import videoSrc from "../assets/video.webm";
 import "../styles/main.css";
 
 const BackgroundVideo = () => {

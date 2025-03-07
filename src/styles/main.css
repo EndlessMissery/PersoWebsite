@@ -1,31 +1,24 @@
-/* Component Styles */
-@import '/src/App.css';
-@import './ComponentStyles/CornerText.css';
-@import './ComponentStyles/Header.css';
-@import './ComponentStyles/Images.css';
-@import './ComponentStyles/Intro.css';
-@import './ComponentStyles/Resume.css';
-@import './ComponentStyles/RightContent.css';
-@import './ComponentStyles/Box.css';
+/* Left Side */
+@import '../components/LeftSide/Header/CornerText/CornerText.css';
+@import '../components/LeftSide/Header/Header.css';
+@import '../components/LeftSide/MainContent/MainContent.css';
+@import '../components/LeftSide/MainContent/MainContentButtons/ContactButtons.css';
+@import '../components/LeftSide/MainContent/MainContentButtons/ResumeButtons.css';
+@import '../components/LeftSide/LeftTab/LeftTab.css';
 
-/* Button Styles */
-@import './ButtonStyles/CategoryButtons.css';
-@import './ButtonStyles/ContactButtons.css';
-@import './ButtonStyles/Dots.css';
-@import './ButtonStyles/EduExDots.css';
-@import './ButtonStyles/FooterButtons.css';
-@import './ButtonStyles/ResumeButtons.css';
-@import './ButtonStyles/RightTab.css'; 
-@import './ButtonStyles/CaseStudyButton.css';
-
-/* Mobile */
-@import './Mobile/MobileView.css';
-@import './Mobile/MobileRightHeader.css';
-@import './Mobile/MobileRightContent.css';
+/* Right Side */
+@import '../components/RightSide/ImageBox/SlideContent.css';
+@import '../components/RightSide/RightContent.css';
+@import '../components/RightSide/Box.css';
+@import '../components/RightSide/ImageBox/ImageBoxButtons/CategoryButtons.css';
+@import '../components/RightSide/ImageBox/DotIndicator.css';
+@import '../components/RightSide/RightHeader/RightTab.css'; 
+@import '../components/RightSide/ImageBox/ImageBoxButtons/CaseStudyButton.css';
 
 /* Lang */
-@import './LanguageSwitcher.css';
+@import '../styles/LanguageSwitcher.css';
 
+/* Colors */
 @import './Colors.css';
 
 

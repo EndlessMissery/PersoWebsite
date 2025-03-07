@@ -179,32 +179,35 @@
       {
         "name": "mixart.category2",
         "images": [
-          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg",
-          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg"
+          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.webp",
+          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.webp"
         ]
       },
       {
         "name": "mixart.category3",
         "images": [
-          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg",
-          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg",
-          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg"
+          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.webp",
+          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.webp",
+          "src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.webp"
         ]
       },
       {
         "name": "mixart.category4",
         "images": [
-          "src/assets/Illustrations/VectorArt/VectorArt_1.png",
-          "src/assets/Illustrations/VectorArt/VectorArt_2.png",
-          "src/assets/Illustrations/VectorArt/VectorArt_3.png"
+          "src/assets/Illustrations/VectorArt/VectorArt_1.webp",
+          "src/assets/Illustrations/VectorArt/VectorArt_2.webp",
+          "src/assets/Illustrations/VectorArt/VectorArt_3.webp"
         ]
       },
       {
         "name": "mixart.category5",
         "images": [
-          "src/assets/Illustrations/LogoRecreation/LogoRecreation_1.png",
-          "src/assets/Illustrations/LogoRecreation/LogoRecreation_2.png",
-          "src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png"
+          "src/assets/Illustrations/LogoRecreation/Logo_1.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_2.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_3.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_4.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_5.svg"
+
         ]
       }
     ]

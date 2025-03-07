@@ -1,0 +1,37 @@
+.custom-box {
+  margin-top: 90px;
+  margin-left: 30px;
+  width: 760px;
+  height: 760px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  z-index: -100000;
+  backdrop-filter: blur(4);
+  -webkit-backdrop-filter: blur(4);
+
+}
+
+  @media screen and (min-width: 2550px) {
+    .custom-box {
+      width: 900px;
+      margin-left: 550px;
+      margin-top: 175px;
+    }
+
+  }
+  @media screen and (min-width: 3150px) {
+    .right-content {
+      width: 1500px;
+      margin-left: -105px;
+    }
+
+    .right-content-box {
+      height: 1500px;
+      width: 100%;
+    }
+  }

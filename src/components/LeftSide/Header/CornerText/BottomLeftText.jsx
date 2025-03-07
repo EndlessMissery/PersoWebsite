@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import useControlledTypewriter from "../../../../hooks/useControlledTypewriter";
 
 const BottomLeftText = () => {
-  const bottomLeftText = useControlledTypewriter(["#060606", "Illustrator", "#1EBE53", "UX/UI Designer"], 1500, 50, 50, "|");
+  const bottomLeftText = useControlledTypewriter(["#14213D", "Illustrator", "#14213D60", "UX/UI Designer"], 1500, 50, 50, "|");
 
   return (
     <motion.div

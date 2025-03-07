@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RightContent from "./RightContent";
-import RightHeader from "./RightHeader/RightHeader";
+import RightHeader from "./RightHeader/RightTab";
 import Box from "./Box";
 import "../../styles/main.css";
 

@@ -1,6 +1,6 @@
 .language-switcher {
   position: absolute;
-  top: 94%; /* Adjust positioning */
+  top: 94%;
   right: 2%;
   z-index: 1000;
   display: flex;
@@ -14,7 +14,7 @@
   background: transparent;
   border: none;
   font-size: 36px;
-  color: var(--right-tab-button-color);
+  color: var(--right-button);
   padding: 10px;
   cursor: default;
   scale: 1.1;
@@ -30,26 +30,23 @@
   cursor: pointer;
 }
 
-
-
-
 .language-options {
   position: absolute;
-  top: -70px; /* Position options above the globe */
+  top: -70px;
   right: 0;
   background: transparent;
   display: flex;
   flex-direction: row;
   gap: 10px;
   opacity: 0;
-  pointer-events: none; /* Prevent clicks when hidden */
+  pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .language-options.open {
   opacity: 1;
-  pointer-events: auto; /* Allow clicks when the options are visible */
-  transform: translateY(-10px); /* "Pop-out" effect */
+  pointer-events: auto; 
+  transform: translateY(-10px); 
 }
 
 .language-options button {
@@ -87,7 +84,7 @@
 .flag-icon {
   position: relative;
   left: 6px;
-  margin-top: 40px;
+  margin-top: 50px;
   width: 18px;
   height: 18px;
   border-radius: 50%;

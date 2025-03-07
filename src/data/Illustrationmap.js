@@ -4,17 +4,19 @@ import Artwork2 from '../assets/Illustrations/Artwork/Artwork_2.webp';
 import Artwork3 from '../assets/Illustrations/Artwork/Artwork_3.webp';
 import Artwork4 from '../assets/Illustrations/Artwork/Artwork_4.webp';
 import Artwork5 from '../assets/Illustrations/Artwork/Artwork_5.webp';
-import ArtworkComicStyle1 from '../assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg';
-import ArtworkComicStyle2 from '../assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg';
-import ArtworkMangaStyle1 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg';
-import ArtworkMangaStyle2 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg';
-import ArtworkMangaStyle3 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg';
-import VectorArt1 from '../assets/Illustrations/VectorArt/VectorArt_1.png';
-import VectorArt2 from '../assets/Illustrations/VectorArt/VectorArt_2.png';
-import VectorArt3 from '../assets/Illustrations/VectorArt/VectorArt_3.png';
-import LogoRecreation1 from '../assets/Illustrations/LogoRecreation/LogoRecreation_1.png';
-import LogoRecreation2 from '../assets/Illustrations/LogoRecreation/LogoRecreation_2.png';
-import LogoRecreation3 from '../assets/Illustrations/LogoRecreation/LogoRecreation_3.png';
+import ArtworkComicStyle1 from '../assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.webp';
+import ArtworkComicStyle2 from '../assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.webp';
+import ArtworkMangaStyle1 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.webp';
+import ArtworkMangaStyle2 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.webp';
+import ArtworkMangaStyle3 from '../assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.webp';
+import VectorArt1 from '../assets/Illustrations/VectorArt/VectorArt_1.webp';
+import VectorArt2 from '../assets/Illustrations/VectorArt/VectorArt_2.webp';
+import VectorArt3 from '../assets/Illustrations/VectorArt/VectorArt_3.webp';
+import LogoRecreation1 from '../assets/Illustrations/LogoRecreation/Logo_1.svg';
+import LogoRecreation2 from '../assets/Illustrations/LogoRecreation/Logo_2.svg';
+import LogoRecreation3 from '../assets/Illustrations/LogoRecreation/Logo_3.svg';
+import LogoRecreation4 from '../assets/Illustrations/LogoRecreation/Logo_4.svg';
+import LogoRecreation5 from '../assets/Illustrations/LogoRecreation/Logo_5.svg';
 
 // APP DESIGN IMPORTS
 import App1 from '../assets/AppDesigns/App_1_1.webp';
@@ -54,17 +56,20 @@ const illustrationMap = {
   'src/assets/Illustrations/Artwork/Artwork_3.webp': Artwork3,
   'src/assets/Illustrations/Artwork/Artwork_4.webp': Artwork4,
   'src/assets/Illustrations/Artwork/Artwork_5.webp': Artwork5,
-  'src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.jpg': ArtworkComicStyle1,
-  'src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.jpg': ArtworkComicStyle2,
-  'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.jpg': ArtworkMangaStyle1,
-  'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.jpg': ArtworkMangaStyle2,
-  'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.jpg': ArtworkMangaStyle3,
-  'src/assets/Illustrations/VectorArt/VectorArt_1.png': VectorArt1,
-  'src/assets/Illustrations/VectorArt/VectorArt_2.png': VectorArt2,
-  'src/assets/Illustrations/VectorArt/VectorArt_3.png': VectorArt3,
-  'src/assets/Illustrations/LogoRecreation/LogoRecreation_1.png': LogoRecreation1,
-  'src/assets/Illustrations/LogoRecreation/LogoRecreation_2.png': LogoRecreation2,
-  'src/assets/Illustrations/LogoRecreation/LogoRecreation_3.png': LogoRecreation3,
+  'src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.webp': ArtworkComicStyle1,
+  'src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.webp': ArtworkComicStyle2,
+  'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_1.webp': ArtworkMangaStyle1,
+  'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_2.webp': ArtworkMangaStyle2,
+  'src/assets/Illustrations/ArtworkMangaStyle/ArtworkMangaStyle_3.webp': ArtworkMangaStyle3,
+  'src/assets/Illustrations/VectorArt/VectorArt_1.webp': VectorArt1,
+  'src/assets/Illustrations/VectorArt/VectorArt_2.webp': VectorArt2,
+  'src/assets/Illustrations/VectorArt/VectorArt_3.webp': VectorArt3,
+  'src/assets/Illustrations/LogoRecreation/Logo_1.svg': LogoRecreation1,
+  'src/assets/Illustrations/LogoRecreation/Logo_2.svg': LogoRecreation2,
+  'src/assets/Illustrations/LogoRecreation/Logo_3.svg': LogoRecreation3,
+  'src/assets/Illustrations/LogoRecreation/Logo_4.svg': LogoRecreation4,
+  'src/assets/Illustrations/LogoRecreation/Logo_5.svg': LogoRecreation5,
+
 
   // APP DESIGN MAP
   'src/assets/AppDesigns/App_1_1.webp': App1,

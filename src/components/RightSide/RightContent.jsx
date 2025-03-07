@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/main.css';
 import data from '../../data/illustrations.json'; // Import the illustrations data
 import illustrationMap from '../../data/Illustrationmap'; // Import the illustration map
-import ContentBox from './Scrolls/ContentBox';
-import SlideContent from './Scrolls/SlideContent';
-import CategoryButtons from './Scrolls/CategoryButtons';
-import ScrollIndicator from './Scrolls/ScrollIndicator';
-import DotIndicator from './Scrolls/DotIndicator';
+import ContentBox from './ImageBox/ContentBox';
+import SlideContent from './ImageBox/SlideContent';
+import CategoryButtons from './ImageBox/ImageBoxButtons/CategoryButtons';
+import ScrollIndicator from './ImageBox/ScrollIndicator';
+import DotIndicator from './ImageBox/DotIndicator';
 import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 
 const RightContent = ({ rightActiveTab }) => {
@@ -28,12 +28,12 @@ const RightContent = ({ rightActiveTab }) => {
       [rightActiveTab]: 0,
     }));
   }, [rightActiveTab, selectedCategory]);
-
+  
   useEffect(() => {
     const handleWheel = (event) => {
       event.preventDefault();
       const currentTabIndex = slideIndex[rightActiveTab];
-
+  
       if (content[rightActiveTab]?.categories?.[selectedCategory]?.images) {
         setSlideIndex((prev) => ({
           ...prev,
@@ -43,12 +43,13 @@ const RightContent = ({ rightActiveTab }) => {
         }));
       }
     };
-
+  
     window.addEventListener('wheel', handleWheel, { passive: false });
     return () => {
       window.removeEventListener('wheel', handleWheel);
     };
-  }, [rightActiveTab, selectedCategory, slideIndex]);
+  }, [rightActiveTab, selectedCategory, slideIndex, content]);
+  
 
   const getSlideImage = (imagePath) => illustrationMap[imagePath] || imagePath;
 
@@ -62,14 +63,13 @@ const RightContent = ({ rightActiveTab }) => {
         image: getSlideImage(content[rightActiveTab].categories[selectedCategory]?.images[slideIndex[rightActiveTab]]),
       };
     }
-    return null; // In case of invalid tab
+    return null;
   };
 
   return (
     <div className="right-content">
       <div className="slider-container">
         <ContentBox style={getContentBoxStyle()}>
-          {/* Wrap the box content with AnimatePresence */}
           <AnimatePresence mode="wait">
             <motion.div
               key={`${rightActiveTab}-${selectedCategory}-${slideIndex[rightActiveTab]}`}
