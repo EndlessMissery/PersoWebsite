@@ -5,7 +5,7 @@ import Box from "./Box";
 import "../../styles/main.css";
 
 const RightSide = () => {
-  const [rightActiveTab, setRightActiveTab] = useState('bookcovers'); // Set initial active tab to 'bookcovers'
+  const [rightActiveTab, setRightActiveTab] = useState('appdesign');
 
   return (
     <div className="right-side">

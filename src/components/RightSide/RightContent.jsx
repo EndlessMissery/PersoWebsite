@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/main.css';
-import data from '../../data/illustrations.json'; // Import the illustrations data
-import illustrationMap from '../../data/Illustrationmap'; // Import the illustration map
+import data from '../../data/illustrations.json';
+import illustrationMap from '../../data/Illustrationmap';
 import ContentBox from './ImageBox/ContentBox';
 import SlideContent from './ImageBox/SlideContent';
 import CategoryButtons from './ImageBox/ImageBoxButtons/CategoryButtons';
 import ScrollIndicator from './ImageBox/ScrollIndicator';
 import DotIndicator from './ImageBox/DotIndicator';
-import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
+import { motion, AnimatePresence } from 'framer-motion';
 
 const RightContent = ({ rightActiveTab }) => {
   const [slideIndex, setSlideIndex] = useState({
-    bookCover: 0,
     appDesign: 0,
     webDesign: 0,
+    bookCover: 0,
     visualidentities: 0,
     illustrations: 0,
   });
@@ -22,7 +22,6 @@ const RightContent = ({ rightActiveTab }) => {
   const content = data;
 
   useEffect(() => {
-    // Reset slide index on tab change
     setSlideIndex((prev) => ({
       ...prev,
       [rightActiveTab]: 0,
@@ -59,9 +58,22 @@ const RightContent = ({ rightActiveTab }) => {
 
   const getSlideContent = () => {
     if (content[rightActiveTab]?.categories) {
-      return {
-        image: getSlideImage(content[rightActiveTab].categories[selectedCategory]?.images[slideIndex[rightActiveTab]]),
-      };
+      const currentSlide = content[rightActiveTab].categories[selectedCategory]?.images[slideIndex[rightActiveTab]];
+      
+      const isVideo = currentSlide?.endsWith('.webm');
+      const isImage = currentSlide?.endsWith('.webp') || currentSlide?.endsWith('.png') || currentSlide?.endsWith('.jpg');
+  
+      if (isVideo) {
+        return {
+          type: 'video',
+          src: getSlideImage(currentSlide),
+        };
+      } else if (isImage) {
+        return {
+          type: 'image',
+          src: getSlideImage(currentSlide),
+        };
+      }
     }
     return null;
   };

@@ -8,7 +8,6 @@ import SectionButtons from ".//MainContentButtons/ResumeButtons";
 const ResumeSection = () => {
   const { t, language } = useTranslationCustom();
 
-  // Typewriter effects
   const resumeHeader = useTypewriter({
     words: [t("resumeSection.resume")],
     typeSpeed: 70,
@@ -27,12 +26,10 @@ const ResumeSection = () => {
     initialDelay: 0
   });
 
-  // Active section + dot nav
-  const [activeSection, setActiveSection] = useState("education");
+  const [activeSection, setActiveSection] = useState("experience");
   const [experienceIndex, setExperienceIndex] = useState(0);
   const [skillsIndex, setSkillsIndex] = useState(0);
 
-  // Fade-out handle
   const [, setIsInitLoad] = useState(false);
 
   useEffect(() => {
@@ -42,7 +39,6 @@ const ResumeSection = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Data
   const educationList = [
     { degree: [t("resumeSection.collegeDegree")], school: [t("resumeSection.university")], graduation: [t("resumeSection.collegeGraduated")] },
     { degree: [t("resumeSection.highschoolDegree")], school: "Kosinova Olomouc", graduation: [t("resumeSection.highschoolGraduated")] },
@@ -75,7 +71,7 @@ const ResumeSection = () => {
   ];
 
   const skillsList = [
-    { category: "Hard Skills", skills: ["Adobe Photoshop", "Illustrator", "Figma", "Sketch", "HTML", "CSS", "ReactJS"] },
+    { category: "Hard Skills", skills: ["Photoshop", "Illustrator", "Figma", "Sketch", "HTML", "CSS", "ReactJS"] },
     {
       category: "Soft Skills",
       skills: [
@@ -96,7 +92,6 @@ const ResumeSection = () => {
     }
   ];
 
-  // Transition fade-in/out animation
   const fadeTransition = { duration: 1.5, delay: 0.5 };
 
   return (
@@ -105,17 +100,14 @@ const ResumeSection = () => {
       <motion.hr initial={{ width: "0%" }} animate={{ width: "100%" }} transition={{ duration: 1.5 }} />
       <p className="intro-desc">{resumeContent}</p>
 
-      {/* Include the new SectionButtons component */}
       <SectionButtons 
         activeSection={activeSection} 
         setActiveSection={setActiveSection} 
       />
 
-      {/* Scrollable Container for Resume Sections */}
       <AnimatePresence mode="wait">
         <div className="scrollable-box">
           
-          {/* Education Section */}
           {activeSection === "education" && (
             <motion.section 
               className="resume-section"
@@ -138,7 +130,6 @@ const ResumeSection = () => {
             </motion.section>
           )}
 
-          {/* Experience Section */}
           {activeSection === "experience" && (
             <motion.section
               className="resume-section"
@@ -160,7 +151,6 @@ const ResumeSection = () => {
             </motion.section>
           )}
 
-          {/* Skills Section */}
           {activeSection === "skills" && (
             <motion.section
               className="resume-section"
@@ -177,7 +167,6 @@ const ResumeSection = () => {
             </motion.section>
           )}
 
-          {/* Dots Experience */}
           {activeSection === "experience" && (
             <motion.div className="experience-dots-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={fadeTransition}>
               {workExperienceList.map((_, index) => (

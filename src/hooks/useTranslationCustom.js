@@ -10,7 +10,6 @@ const useTranslationCustom = () => {
       setLanguage(i18n.language);
     };
     
-    // Sledování změny jazyka
     i18n.on("languageChanged", handleLanguageChange);
 
     return () => {

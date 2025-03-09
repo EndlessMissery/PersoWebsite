@@ -8,8 +8,7 @@
           "src/assets/AppDesigns/App_1.png",
           "src/assets/AppDesigns/App_1.png",
           "src/assets/AppDesigns/App_1.png"
-        ],
-        "pdf": "src/assets/AppDesigns/App_1.png"
+        ]
       },
       {
         "name": "appdesign.category2",
@@ -48,7 +47,7 @@
       {
         "name": "webdesign.category1",
         "images": [
-          "src/assets/WebDesigns/Web_1.png",
+          "src/assets/WebDesigns/Web_1.webp",
           "src/assets/WebDesigns/Web_1.png",
           "src/assets/WebDesigns/Web_1.png",
           "src/assets/WebDesigns/Web_1.png"

@@ -32,7 +32,6 @@
   margin-top: 8px;
 }
 
-
 .intro {
     font-size: 24px;
     font-weight: 100;
@@ -58,9 +57,23 @@
   font-weight: 400;
 }
 
+.from { 
+  color: var(--right-button);
+  font-weight: light;
+  font-size: 18px;
+}
+
+.fa-map-marker-alt {
+  color: var(--right-button);
+  opacity: 0.75;
+  font-weight: light;
+  font-size: 18px;
+}
+
 .intro-desc {
     color: var(--p-color);
-    font-weight: light;
+    font-weight: lighter;
+    font-size: 18px;
     margin-top: 20px;
     line-height: 25px;
 }   

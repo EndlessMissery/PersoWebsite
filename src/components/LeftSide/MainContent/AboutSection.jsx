@@ -19,6 +19,13 @@ const AboutSection = () => {
     initialDelay: isFirstLoad ? 2500 : 0,
   });
 
+  const aboutFrom = useTypewriter({
+    words: [t("aboutSection.from")],
+    typeSpeed: 35,
+    delaySpeed: 4000,
+    initialDelay: isFirstLoad ? 2500 : 0,
+  });
+
   const aboutName = useTypewriter({
     words: [t("aboutSection.name")],
     cursor: true,
@@ -32,7 +39,7 @@ const AboutSection = () => {
     words: [t("aboutSection.description")],
     cursor: false,
     cursorStyle: "|",
-    typeSpeed: 35,
+    typeSpeed: 15,
     delaySpeed: 4000,
     initialDelay: isFirstLoad ? 4000 : 0,
   });
@@ -46,6 +53,7 @@ const AboutSection = () => {
         animate={{ width: "100%" }}
         transition={{ duration: 1.5, delay: isFirstLoad ? 0.1 : 1 }}
       />
+      <span className="from"><i className="fas fa-map-marker-alt"></i>{aboutFrom}</span>
       <p className="intro-desc">{aboutDesc}</p>
     </motion.div>
   );

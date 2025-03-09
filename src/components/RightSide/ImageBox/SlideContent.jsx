@@ -7,11 +7,9 @@ const SlideContent = ({ slide }) => {
   const [isInitialLoad, setIsInitialLoad] = useState(true);
 
   useEffect(() => {
-    // Visibility true when it is loaded
     setIsVisible(true);
 
-    // Delay
-    const timer = setTimeout(() => setIsInitialLoad(false), 5000); 
+    const timer = setTimeout(() => setIsInitialLoad(false), 5000);
 
     return () => {
       clearTimeout(timer);
@@ -21,23 +19,40 @@ const SlideContent = ({ slide }) => {
 
   return (
     <AnimatePresence mode="wait">
-      {slide.image && (
+      {slide?.type === "video" ? (
+        <motion.video
+          key={slide.src}
+          className="slide-video"
+          src={slide.src}
+          controls
+          autoPlay
+          loop
+          muted
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{
+            duration: isInitialLoad ? 0.75 : 0,
+            delay: isInitialLoad ? 0 : 0,
+          }}
+        />
+      ) : slide?.type === "image" && slide?.src ? (
         <motion.img
-          key={slide.image}
+          key={slide.src}
           className="slide-image"
-          src={slide.image}
+          src={slide.src}
           alt={slide.text || "Image description"}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{
             duration: isInitialLoad ? 0.75 : 0,
-            delay: isInitialLoad ? 0: 0,
+            delay: isInitialLoad ? 0 : 0,
           }}
         />
-      )}
+      ) : null}
     </AnimatePresence>
   );
-}
+};
 
 export default SlideContent;

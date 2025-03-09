@@ -15,6 +15,12 @@ const ContactButtons = () => {
       icon: "fab fa-linkedin",
       isLink: true,
     },
+    /*{
+      href: "https://www.facebook.com/roman.mnacek.7/",
+      className: "github-button",
+      icon: "fab fa-github",
+      isLink: true,
+    },*/
     {
       href: "https://wa.me/+420773101064",
       className: "whatsapp-button",

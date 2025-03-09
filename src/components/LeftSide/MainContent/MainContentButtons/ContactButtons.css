@@ -7,7 +7,7 @@
     padding-bottom: 15px;
   }
   
-  .email-button, .whatsapp-button, .facebook-button, .linkedin-button {
+  .email-button, .whatsapp-button, .facebook-button, .linkedin-button, .github-button {
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -18,23 +18,23 @@
     scale: .8;
   }
   
-  .email-button i, .whatsapp-button i, .facebook-button i, .linkedin-button i {
+  .email-button i, .whatsapp-button i, .facebook-button i, .linkedin-button i, .github-button i {
     color: var(--left-button-nonactive);
     font-size: 45px;;
     transition: all 0.25s ease-out;
   }
   
-  .email-button:hover, .whatsapp-button:hover, .facebook-button:hover, .linkedin-button:hover,
-  .email-button:hover i, .whatsapp-button:hover i, .facebook-button:hover i, .linkedin-button:hover i {
+  .email-button:hover, .whatsapp-button:hover, .facebook-button:hover, .linkedin-button:hover, .github-button:hover,
+  .email-button:hover i, .whatsapp-button:hover i, .facebook-button:hover i, .linkedin-button:hover i, .github-button:hover i {
     color: var(--left-button);
   }
-  
+
     @media (min-width: 2550px) {
       .button-container-contact {
         margin-top: 75px;
       }
   
-      .email-button, .whatsapp-button, .facebook-button, .linkedin-button {
+      .email-button, .whatsapp-button, .facebook-button, .linkedin-button, .github-button {
         padding: 10px 30px;
         margin-left: 35px;
       }

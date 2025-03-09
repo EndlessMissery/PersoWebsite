@@ -5,9 +5,9 @@ import useTranslationCustom from "../../../hooks/useTranslationCustom";
 const RightTab = ({ rightActiveTab, setrightActiveTab }) => {
     const { t } = useTranslationCustom();
   const tabLabels = {
-    bookcovers: t("rightHeader.cover"),
     appdesign: t("rightHeader.appDesign"),
     webdesign: t("rightHeader.webDesign"),
+    bookcovers: t("rightHeader.cover"),
     visualidentities: t("rightHeader.identity"),
     illustrations: t("rightHeader.mixArt"),
   };

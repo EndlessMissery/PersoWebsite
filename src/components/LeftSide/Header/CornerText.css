@@ -1,0 +1,42 @@
+.corner {
+  position: fixed;
+  font-weight: 400;
+  z-index: 100;
+  cursor: default;
+  user-select: none;
+  font-weight: 400;
+}
+
+.top-right {
+  color: var(--right-button-nonactive);
+  top: 20px;
+  right: 20px;
+  text-align: right;
+  font-size: larger;
+}
+
+.bottom-left {
+  color: var(--left-button-nonactive);
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  font-size: larger;
+}
+
+  @media (min-width: 2550px) {
+    .top-right {
+      font-size: 24px;
+    }
+    
+    .bottom-left {
+      font-size: 24px;
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    .top-right, .bottom-left
+    {
+      display: none;
+    }
+  }

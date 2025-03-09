@@ -9,6 +9,18 @@ function App() {
   const [activeTab, setActiveTab] = useState("about");
   const [rightActiveTab, setrightActiveTab] = useState("appdesign");
 
+  useEffect(() => {
+    const preventRightClick = (e) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener('contextmenu', preventRightClick);
+
+    return () => {
+      document.removeEventListener('contextmenu', preventRightClick);
+    };
+  }, []);
+
   return (
     <div className="App" style={{ cursor: `url(/cursor.png), auto` }}>
       <BackgroundVideo />

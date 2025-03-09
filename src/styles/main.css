@@ -1,5 +1,5 @@
 /* Left Side */
-@import '../components/LeftSide/Header/CornerText/CornerText.css';
+@import '../components/LeftSide/Header/CornerText.css';
 @import '../components/LeftSide/Header/Header.css';
 @import '../components/LeftSide/MainContent/MainContent.css';
 @import '../components/LeftSide/MainContent/MainContentButtons/ContactButtons.css';

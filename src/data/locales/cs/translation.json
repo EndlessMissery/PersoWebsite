@@ -7,7 +7,8 @@
   "aboutSection": {
     "intro": "Ahoj, jmenuji se",
     "name": "Roman Kalita",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...Lorem Ipsum is simply dummy text of the printing and typesetting industry...Lorem Ipsum is simply dummy text of the printing and typesetting industry...Lorem Ipsum is simply dummy text of the printing and typesetting industry..."
+    "from": " Olomouc - Česká republika",
+    "description": "Grafický designér a UI/UX specialista se zaměřením na tvorbu intuitivních a elegantních aplikací a webů. Mám zkušenosti s programy Sketch, Figma a Illustrator a propojuji design s frontendovými dovednostmi v CSS a ReactJS. Věnuji se také digitální malbě v Photoshopu a mám za sebou návrhy obálek pro časopisy, kde kombinuji kreativní vizi s funkčním designem."
   },
   "resumeSection": {
     "resume": "Životopis",
@@ -75,7 +76,7 @@
     "category4": "Aplikace 4"
   },
   "webdesign": {
-    "category1": "Web 1",
+    "category1": "VilaZdravi.cz",
     "category2": "Web 2",
     "category3": "Web 3",
     "category4": "Web 4"

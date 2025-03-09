@@ -34,7 +34,6 @@ const LanguageSwitcher = () => {
       transition={{ duration: 1.5, delay: hasAnimated ? 0 : 5.5 }}
     >
       <button className={`language-icon ${isMenuOpen ? 'active' : ''}`} aria-label="Toggle language menu">
-        {/* Globe Icon from Font Awesome CDN */}
         <i className="fa-solid fa-globe" style={{ fontSize: '28px' }}></i>
       </button>
 

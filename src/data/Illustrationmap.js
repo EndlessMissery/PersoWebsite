@@ -25,7 +25,7 @@ import App3 from '../assets/AppDesigns/App_1_1.webp';
 import App4 from '../assets/AppDesigns/App_1_1.webp';
 
 // WEB DESIGN IMPORTS
-import Web1 from '../assets/WebDesigns/Web_1.png';
+import Web1 from '../assets/WebDesigns/Web_1.webp';
 import Web2 from '../assets/WebDesigns/Web_1.png';
 import Web3 from '../assets/WebDesigns/Web_1.png';
 import Web4 from '../assets/WebDesigns/Web_1.png';
@@ -78,7 +78,7 @@ const illustrationMap = {
   'src/assets/Illustrations/Artwork/Artwork_3.jpg': App4,
 
   // WEB DESIGN MAP
-  'src/assets/WebDesigns/Web_1.png': Web1,
+  'src/assets/WebDesigns/Web_1.webp': Web1,
   'src/assets/WebDesigns/Web_1.png': Web2,
   'src/assets/WebDesigns/Web_1.png': Web3,
   'src/assets/WebDesigns/Web_1.png': Web4,

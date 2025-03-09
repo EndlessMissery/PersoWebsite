@@ -14,13 +14,6 @@ const ResumeButtons = ({ activeSection, setActiveSection }) => {
       transition={{ duration: 1.5, delay: 0.25 }}
     >
       <motion.button
-        className={`button ${activeSection === "education" ? "active" : ""}`}
-        onClick={() => setActiveSection("education")}
-      >
-        <i className="fas fa-university"></i> {t("resumeSection.education")}
-      </motion.button>
-
-      <motion.button
         className={`button ${activeSection === "experience" ? "active" : ""}`}
         onClick={() => setActiveSection("experience")}
       >
@@ -32,6 +25,13 @@ const ResumeButtons = ({ activeSection, setActiveSection }) => {
         onClick={() => setActiveSection("skills")}
       >
         <i className="fas fa-clipboard-list"></i> {t("resumeSection.skill")}
+      </motion.button>
+
+      <motion.button
+        className={`button ${activeSection === "education" ? "active" : ""}`}
+        onClick={() => setActiveSection("education")}
+      >
+        <i className="fas fa-university"></i> {t("resumeSection.education")}
       </motion.button>
     </motion.div>
   );
