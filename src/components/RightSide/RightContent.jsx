@@ -61,7 +61,7 @@ const RightContent = ({ rightActiveTab }) => {
       const currentSlide = content[rightActiveTab].categories[selectedCategory]?.images[slideIndex[rightActiveTab]];
       
       const isVideo = currentSlide?.endsWith('.webm');
-      const isImage = currentSlide?.endsWith('.webp') || currentSlide?.endsWith('.png') || currentSlide?.endsWith('.jpg');
+      const isImage = currentSlide?.endsWith('.webp') || currentSlide?.endsWith('.png') || currentSlide?.endsWith('.jpg') || currentSlide?.endsWith('.svg');
   
       if (isVideo) {
         return {

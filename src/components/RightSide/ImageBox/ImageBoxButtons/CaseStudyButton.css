@@ -1,11 +1,12 @@
 .category-buttons .case-study-button-container .case-study-button {
+  position: absolute;
   z-index: 1000000000000;
   background-color: var(--right-button-nonactive);
   color: white;
   padding: 10px 20px;
   width: 150px;
   left: 854px;
-  top: 248px;
+  top: 448px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 50px;
@@ -14,13 +15,8 @@
   font-size: 1.2rem;
   transition: 0.3s ease-in-out;
   text-align: center;
-  position: relative;
 }
 
-.case-study-button-container {
-  position: relative;
-
-}
 
 .category-buttons .case-study-button-container .case-study-button:hover {
   background-color: var(--right-button);
@@ -32,7 +28,7 @@
   @media (min-width: 2550px) {
     .case-study-button-container {
       z-index: 1000000000000;
-      position: relative;
+      position: absolute;
       left: 79.5%;
       top: 101px;
     }

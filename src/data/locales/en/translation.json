@@ -24,14 +24,14 @@
     "vocationalGraduated": "Graduated: 2016",
     "jobExperienceFreelance": "Freelance Graphic Designer",
     "companyFreelance": "Self-employed",
-    "responsibilitiesFreelance1": "Desc 1",
-    "responsibilitiesFreelance2": "Desc 2",
-    "responsibilitiesFreelance3": "Desc 3",
-    "responsibilitiesFreelance4": "Desc 4",
-    "responsibilitiesWestlogic1": "Desc 1",
-    "responsibilitiesWestlogic2": "Desc 2",
-    "responsibilitiesWestlogic3": "Desc 3",
-    "responsibilitiesWestlogic4": "Desc 4",
+    "responsibilitiesFreelance1": "Communication with clients and handling requirements",  
+    "responsibilitiesFreelance2": "Designing from wireframes to complete web designs",  
+    "responsibilitiesFreelance3": "Creating modern and functional websites",  
+    "responsibilitiesFreelance4": "Creating raster illustrations and vector graphics",  
+    "responsibilitiesWestlogic1": "Creating vectors based on client specifications",  
+    "responsibilitiesWestlogic2": "Handling revisions and finding compromises with clients",  
+    "responsibilitiesWestlogic3": "Improving skills in vector graphics",  
+    "responsibilitiesWestlogic4": "Gaining experience in color theory",
     "westlogicPosition": "Graphic Designer",
     "softSkill1": "Critical Thinking & Problem-Solving",
     "softSkill2": "User-Centric Mindset",
@@ -53,7 +53,7 @@
     "cover": "Cover",
     "appDesign": "App Design",
     "webDesign": "Web Design",
-    "identity": "Identity",
+    "identity": "Logo",
     "mixArt": "Misc. Art"
   },
   "categoryButtons": {
@@ -75,22 +75,22 @@
   },
   "webdesign": {
     "category1": "VilaZdravi.cz",
-    "category2": "Web 2",
+    "category2": "CoinGen",
     "category3": "Web 3",
     "category4": "Web 4"
   },
   "identity": {
-    "category1": "Identity 1",
-    "category2": "Identity 2",
+    "category1": "Travel.io",
+    "category2": "CoinGen",
     "category3": "Identity 3",
     "category4": "Identity 4"
   },
   "mixart": {
-    "category1": "Painting Style",
-    "category2": "Comic Style",
+    "category1": "Logo Recreation",
+    "category2": "Painting Style",
     "category3": "Manga Style",
     "category4": "Vector Style",
-    "category5": "Logo Recreation"
+    "category5": "Comic Style"
   }
 
 }

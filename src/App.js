@@ -4,6 +4,7 @@ import "./App.css";
 import RightSide from "./components/RightSide/RightSide.jsx";
 import LanguageSwitcher from "./components/LanguageSwitcher.jsx"; 
 import BackgroundVideo from "./components/BackgroundVideo.jsx";
+import ImagePreloader from "./components/ImagePreloader"; // Importuj novou komponentu
 
 function App() {
   const [activeTab, setActiveTab] = useState("about");
@@ -22,7 +23,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App" style={{ cursor: `url(/cursor.png), auto` }}>
+    <div className="App">
+      <ImagePreloader /> {/* Přidej komponentu pro přednačítání obrázků */}
       <BackgroundVideo />
       <LeftSide activeTab={activeTab} setActiveTab={setActiveTab} />
       <RightSide rightActiveTab={rightActiveTab} setrightActiveTab={setrightActiveTab} />

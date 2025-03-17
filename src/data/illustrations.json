@@ -4,10 +4,7 @@
       {
         "name": "appdesign.category1",
         "images": [
-          "src/assets/AppDesigns/App_1_1.webp",
-          "src/assets/AppDesigns/App_1.png",
-          "src/assets/AppDesigns/App_1.png",
-          "src/assets/AppDesigns/App_1.png"
+          "src/assets/AppDesigns/App_1_1.webp"
         ]
       }
     ]
@@ -17,11 +14,14 @@
       {
         "name": "webdesign.category1",
         "images": [
-          "src/assets/WebDesigns/Web_1.webp",
-          "src/assets/WebDesigns/Web_1.png",
-          "src/assets/WebDesigns/Web_1.png",
-          "src/assets/WebDesigns/Web_1.png"
+          "src/assets/WebDesigns/Web_1.webp"
         ]
+      },
+      {
+        "name": "webdesign.category2",
+        "images": [
+          "src/assets/WebDesigns/Web_2.webp"
+          ]
       }
     ]
   },
@@ -31,10 +31,15 @@
       {
         "name": "identity.category1",
         "images": [
-          "src/assets/LogoDesigns/Logo_1.png",
-          "src/assets/LogoDesigns/Logo_1.png",
-          "src/assets/LogoDesigns/Logo_1.png",
-          "src/assets/LogoDesigns/Logo_1.png"
+          "src/assets/LogoDesigns/Identity_1.svg",
+          "src/assets/LogoDesigns/Identity_1_1.svg"
+        ]
+      },
+      {
+        "name": "identity.category2",
+        "images": [
+          "src/assets/LogoDesigns/Identity_2.svg",
+          "src/assets/LogoDesigns/Identity_2_1.svg"
         ]
       }
     ]
@@ -66,18 +71,22 @@
       {
         "name": "mixart.category1",
         "images": [
-          "src/assets/Illustrations/Artwork/Artwork_1.webp",
-          "src/assets/Illustrations/Artwork/Artwork_2.webp",
-          "src/assets/Illustrations/Artwork/Artwork_3.webp",
-          "src/assets/Illustrations/Artwork/Artwork_4.webp",
-          "src/assets/Illustrations/Artwork/Artwork_5.webp"
+          "src/assets/Illustrations/LogoRecreation/Logo_1.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_2.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_3.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_4.svg",
+          "src/assets/Illustrations/LogoRecreation/Logo_5.svg"
+
         ]
       },
       {
         "name": "mixart.category2",
         "images": [
-          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.webp",
-          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.webp"
+          "src/assets/Illustrations/Artwork/Artwork_1.webp",
+          "src/assets/Illustrations/Artwork/Artwork_2.webp",
+          "src/assets/Illustrations/Artwork/Artwork_3.webp",
+          "src/assets/Illustrations/Artwork/Artwork_4.webp",
+          "src/assets/Illustrations/Artwork/Artwork_5.webp"
         ]
       },
       {
@@ -99,12 +108,8 @@
       {
         "name": "mixart.category5",
         "images": [
-          "src/assets/Illustrations/LogoRecreation/Logo_1.svg",
-          "src/assets/Illustrations/LogoRecreation/Logo_2.svg",
-          "src/assets/Illustrations/LogoRecreation/Logo_3.svg",
-          "src/assets/Illustrations/LogoRecreation/Logo_4.svg",
-          "src/assets/Illustrations/LogoRecreation/Logo_5.svg"
-
+          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_1.webp",
+          "src/assets/Illustrations/ArtworkComicStyle/ArtworkComicStyle_2.webp"
         ]
       }
     ]

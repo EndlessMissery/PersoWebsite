@@ -24,14 +24,14 @@
     "vocationalGraduated": "Dokončeno: 2016",
     "jobExperienceFreelance": "Freelance Grafický designér",
     "companyFreelance": "Na volné noze",
-    "responsibilitiesFreelance1": "Popis pozice 1",
-    "responsibilitiesFreelance2": "Popis pozice 2",
-    "responsibilitiesFreelance3": "Popis 3",
-    "responsibilitiesFreelance4": "Popis 4",
-    "responsibilitiesWestlogic1": "Popis 1",
-    "responsibilitiesWestlogic2": "Popis 2",
-    "responsibilitiesWestlogic3": "Popis 3",
-    "responsibilitiesWestlogic4": "Popis 4",
+    "responsibilitiesFreelance1": "Komunikace s klienty a zpracování požadavků",  
+    "responsibilitiesFreelance2": "Návrhy od wireframeů až po kompletní webdesign",  
+    "responsibilitiesFreelance3": "Tvorba moderních a funkčních webů",  
+    "responsibilitiesFreelance4": "Tvorba rastrových ilustrací a vektorové grafiky",  
+    "responsibilitiesWestlogic1": "Vytváření vektorů podle zadání zákazníků",  
+    "responsibilitiesWestlogic2": "Zpracování revizí a hledání kompromisu s klienty",  
+    "responsibilitiesWestlogic3": "Prohlubování zkušeností s vektorovou grafikou",  
+    "responsibilitiesWestlogic4": "Získávání zkušeností s teorií barev",
     "westlogicPosition": "Grafický designér",
     "softSkill1": "Kritické myšlení & řešení problémů",
     "softSkill2": "Uživatelské myšlení",
@@ -54,7 +54,7 @@
     "cover": "Obálka",
     "appDesign": "App Design",
     "webDesign": "Web Design",
-    "identity": "Identita",
+    "identity": "Logo",
     "mixArt": "Různé"
   },
 
@@ -77,22 +77,22 @@
   },
   "webdesign": {
     "category1": "VilaZdravi.cz",
-    "category2": "Web 2",
+    "category2": "CoinGen",
     "category3": "Web 3",
     "category4": "Web 4"
   },
   "identity": {
-    "category1": "Identita 1",
-    "category2": "Identita 2",
+    "category1": "Travel.io",
+    "category2": "CoinGen",
     "category3": "Identita 3",
     "category4": "Identita 4"
   },
   "mixart": {
-    "category1": "Malba stylizace",
-    "category2": "Komiks stylizace",
+    "category1": "Rekreace Loga",
+    "category2": "Malba stylizace",
     "category3": "Manga stylizace",
     "category4": "Vektor stylizace",
-    "category5": "Rekreace Loga"
+    "category5": "Komiks stylizace"
   }
 
 }

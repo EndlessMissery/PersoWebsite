@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import logo from "../../../assets/logo.svg";
+
+const logo = '/public/assets/logo.png';
 
 function isSafari() {
   return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
